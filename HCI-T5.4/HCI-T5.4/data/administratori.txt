@@ -1,0 +1,23 @@
+﻿[
+  {
+    "Ime": "Pera",
+    "Prezime": "Peric",
+    "Email": "admin@gmail.com",
+    "Username": "admin",
+    "Password": "admin"
+  },
+  {
+    "Ime": "Marko",
+    "Prezime": "Markovic",
+    "Email": "admin1@gmail.com",
+    "Username": "admin1",
+    "Password": "admin1"
+  },
+  {
+    "Ime": "Pavle",
+    "Prezime": "Pavlovic",
+    "Email": "admin2@gmail.com",
+    "Username": "admin2",
+    "Password": "admin2"
+  }
+]
