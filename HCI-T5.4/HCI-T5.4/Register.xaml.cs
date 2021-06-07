@@ -24,6 +24,7 @@ namespace HCI_T5._4
     public partial class Register : Window
     {
         private MainWindow MainWindow { get; set; }
+        string pathKlijenata = @"..\..\..\data\klijenti.txt";
 
         public Register()
         {
@@ -39,6 +40,7 @@ namespace HCI_T5._4
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             Boolean uspesno = true;
+            Util util = new Util();
 
             foreach (Admin admin in this.MainWindow.Administratori)
             {
@@ -51,9 +53,11 @@ namespace HCI_T5._4
             }
             if (uspesno)
             {
-                Admin newAdmin = new Admin(Firstname.Text, Lastname.Text, Email.Text, Username.Text, Password.Password);
+                Client newClient = new Client(Firstname.Text, Lastname.Text, Email.Text, Username.Text, Password.Password);
 
-                this.MainWindow.Administratori.Add(newAdmin);
+                this.MainWindow.Klijenti.Add(newClient);
+
+                util.write_to_file<Client>(this.MainWindow.Klijenti, pathKlijenata);
 
                 MessageBox.Show("Uspjesna registracija!");
                 this.Close();

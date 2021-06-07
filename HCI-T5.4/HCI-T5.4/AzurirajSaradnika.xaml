@@ -34,7 +34,7 @@
         <Label Grid.Column="1" Grid.Row="4">Dodaj sliku</Label>
         <TextBox x:Name="Opis" MaxLength="20" Grid.Column="2" Grid.Row="4" Margin="0,0,0,10" ></TextBox>
 
-        <Button x:Name="AzurirajSaradnika" Grid.Column="2" Grid.Row="5" Width="100" Height="40" Content="Azuriraj saradnika" />
+        <Button x:Name="AzurirajSaradnika1" Grid.Column="2" Grid.Row="5" Width="100" Height="40" Content="Azuriraj saradnika" />
         <Button x:Name="Nazad" Content="Nazad" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Grid.Column="1" Grid.Row="6"/>
     </Grid>
 </Window>
