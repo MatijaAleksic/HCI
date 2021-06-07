@@ -5,25 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HCI_T5._4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="300">
+        Title="MainWindow" Height="450" Width="900">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <Menu DockPanel.Dock="Top">
-                <MenuItem Header="Saradnik">
-                    <MenuItem Header="Dodaj sardnika"/>
-                    <MenuItem Header="Tabela saradnika" />
-                </MenuItem>
-                <MenuItem Header="Organizator">
-                    <MenuItem Header="Dodaj organizatora"/>
-                    <MenuItem Header="Tabela organizatora" />
-                </MenuItem>
-                <MenuItem Header="Proizvod">
-                    <MenuItem Header="Dodaj proizvod"/>
-                    <MenuItem Header="Tabela proizvoda" />
-                </MenuItem>
-                <MenuItem Header="Tabela dogadjaja">
-                </MenuItem>
-            </Menu>
+            <Menu.ItemsPanel>
+                <!--Podkontrola koja određuje kako se item-i prikazuju.-->
+                <ItemsPanelTemplate>
+                    <!-- Specificiramo ne šta je u kontroli nego template koji je formira-->
+                    <DockPanel HorizontalAlignment="Stretch"></DockPanel>
+                    <!-- Prikazujemo preko Dock Panela koji preuzme sav prostor -->
+                </ItemsPanelTemplate>
+            </Menu.ItemsPanel>
+
+            <MenuItem Header="_Saradnik">
+                <MenuItem Header="Dodaj sardnika"/>
+                <MenuItem Header="Tabela saradnika" />
+            </MenuItem>
+            <MenuItem Header="_Organizator">
+                <MenuItem Header="Dodaj organizatora"/>
+                <MenuItem Header="Tabela organizatora" />
+            </MenuItem>
+            <MenuItem Header="_Proizvod">
+                <MenuItem Header="Dodaj proizvod"/>
+                <MenuItem Header="Tabela proizvoda" />
+            </MenuItem>
+            <MenuItem Header="_Tabela dogadjaja">
+            </MenuItem>
+
+            <MenuItem Header="_Account" HorizontalAlignment="Right">
+                <MenuItem Header="_Logout" Click="Logout_Click"></MenuItem>
+            </MenuItem>
         </Menu>
         <Grid DockPanel.Dock="Bottom" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
 

@@ -65,5 +65,12 @@ namespace HCI_T5._4
             //login.DataContext = this;
             //login.Show();
         }
+
+        private void Logout_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            var login = new HCI_T5._4.Login(this);
+            login.Show();
+        }
     }
 }

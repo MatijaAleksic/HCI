@@ -27,4 +27,22 @@
 }
 ,
 
+{
+  "Ime": "asdf",
+  "Prezime": "asdf",
+  "Email": "asdf",
+  "Username": "asdf",
+  "Password": "asdf"
+}
+,
+
+{
+  "Ime": "pero",
+  "Prezime": "pero",
+  "Email": "pero",
+  "Username": "pero",
+  "Password": "pero"
+}
+,
+
 ]
