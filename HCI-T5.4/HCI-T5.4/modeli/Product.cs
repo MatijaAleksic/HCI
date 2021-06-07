@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 
 namespace HCI_T5._4.modeli
@@ -21,9 +17,11 @@ namespace HCI_T5._4.modeli
                 PropertyChanged(this, new PropertyChangedEventArgs(name));
             }
         }
+
         public string Id { get; set; }
         private String _ime;
-        private String _opis;
+        private int _cena;
+
         [NonSerialized]
         private WriteableBitmap _slicica;
 
@@ -41,16 +39,16 @@ namespace HCI_T5._4.modeli
                 OnPropertyChanged("Ime");
             }
         }
-        public String Opis
+        public int Cena
         {
             get
             {
-                return _opis;
+                return _cena;
             }
             set
             {
-                _opis = value;
-                OnPropertyChanged("Opis");
+                _cena = value;
+                OnPropertyChanged("Cena");
             }
         }
 

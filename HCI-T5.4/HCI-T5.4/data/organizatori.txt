@@ -1,17 +1,12 @@
 [
-	{
-	  "Ime": "Savo",
-	  "Prezime": "Savic",
-	  "Email": "savo@gmail.com",
-	  "Username": "savo",
-	  "Password": "savic"
-	},
-	{
-	  "Ime": "Dusan",
-	  "Prezime": "Dusanovic",
-	  "Email": "dusan@gmail.com",
-	  "Username": "dusan",
-	  "Password": "dusanovic"
-	}
-]
 
+{
+  "Ime": "Savo",
+  "Prezime": "Savic",
+  "Email": "savo@gmail.com",
+  "Username": "savo",
+  "Password": "savic"
+}
+,
+
+]

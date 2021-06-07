@@ -11,23 +11,26 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Collections.ObjectModel;
+using HCI_T5._4.modeli;
 
 namespace HCI_T5._4
 {
     /// <summary>
-    /// Interaction logic for AdminMainWindow.xaml
+    /// Interaction logic for KlientMainWindow.xaml
     /// </summary>
-    public partial class AdminMainWindow : Window
+    public partial class KlientMainWindow : Window
     {
         private MainWindow MainWindow { get; set; }
 
+        public ObservableCollection<CelebrationRequest> Zahtevi { get; set; }
 
-        public AdminMainWindow()
+        public KlientMainWindow()
         {
             InitializeComponent();
         }
 
-        public AdminMainWindow(MainWindow window)
+        public KlientMainWindow(MainWindow window)
         {
             InitializeComponent();
             this.MainWindow = window;
@@ -40,28 +43,16 @@ namespace HCI_T5._4
             this.Close();
         }
 
-        private void Organizatori_Click(object sender, RoutedEventArgs e)
-        {
-            var s = new TabelaOrganizatora(this.MainWindow);
-            s.Show();
-        }
-
-        private void Klijent_Click(object sender, RoutedEventArgs e)
-        {
-            var s = new TabelaKlijenata(this.MainWindow);
-            s.Show();
-        }
-
-        private void Administrator_Click(object sender, RoutedEventArgs e)
-        {
-            var s = new TabelaAdministratora(this.MainWindow);
-            s.Show();
-        }
-
-        private void AdminMainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        private void KlientMainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             this.MainWindow.Close();
         }
 
+        private void SearchZahtev_KeyUp(object sender, KeyEventArgs e)
+        {
+            var searched = Zahtevi.Where(elem => elem.Grad.ToLower().StartsWith(SearchZahtev.Text.ToLower()));
+
+            dgrMain.ItemsSource = searched;
+        }
     }
 }

@@ -1,0 +1,17 @@
+﻿[
+  {
+    "Ime": "Poslasticarnica"
+  },
+  {
+    "Ime": "Restoran"
+  },
+  {
+    "Ime": "Igraliste"
+  },
+  {
+    "Ime": "Obdaniste"
+  },
+  {
+    "Ime": "Hotel"
+  }
+]

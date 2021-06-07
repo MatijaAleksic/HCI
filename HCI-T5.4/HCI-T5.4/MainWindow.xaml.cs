@@ -35,9 +35,12 @@ namespace HCI_T5._4
         public ObservableCollection<Organiser> Organizatori { get; set; }
         public ObservableCollection<Client> Klijenti { get; set; }
 
+        public ObservableCollection<EnterpriseType> TipoviPreduzeca { get; set; }
+
         readonly public string pathAdministratora = @"..\..\..\data\administratori.txt";
         readonly public string pathOrganizatora = @"..\..\..\data\organizatori.txt";
         readonly public string pathKlijenata = @"..\..\..\data\klijenti.txt";
+        readonly public string pathTipPreduzeca = @"..\..\..\data\tippreduzeca.txt";
 
 
         public MainWindow()
@@ -50,8 +53,13 @@ namespace HCI_T5._4
             Organizatori = util.read_file<Organiser>(pathOrganizatora);
             Klijenti = util.read_file<Client>(pathKlijenata);
 
-            var adminHome = new HCI_T5._4.AdminMainWindow(this);
-            adminHome.Show();
+            TipoviPreduzeca = util.read_file<EnterpriseType>(pathTipPreduzeca);
+
+            var clientHome = new HCI_T5._4.KlientMainWindow(this);
+            clientHome.Show();
+
+            //var adminHome = new HCI_T5._4.AdminMainWindow(this);
+            //adminHome.Show();
 
             //var login = new HCI_T5._4.Login(this);
             //login.Show();

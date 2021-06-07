@@ -30,12 +30,6 @@ namespace HCI_T5._4
         {
             InitializeComponent();
             this.DataContext = this;
-            Products = new ObservableCollection<Product>();
-            Products.Add(new Product {Id="1", Ime = "Petar", Opis = "Petrovic"});
-            Products.Add(new Product { Id = "1", Ime = "Milica", Opis = "Milicevic" });
-            Products.Add(new Product { Id = "1", Ime = "Zoran", Opis = "Zoranovic" });
-            Products.Add(new Product { Id = "1", Ime = "Suzana", Opis = "Suzanic" });
-            Products.Add(new Product { Id = "1", Ime = "Goran", Opis = "Goranski"});
         }
     }
 }
