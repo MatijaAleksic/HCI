@@ -1,0 +1,45 @@
+﻿<Window x:Class="HCI_T5._4.DodajProizvod"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HCI_T5._4"
+        mc:Ignorable="d"
+        Title="DodajProizvod" Height="300
+        " Width="450">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="1" Grid.Row="1">Izaberi saradnika:</Label>
+        <Button Grid.Column="2" Grid.Row="1" Width="150" Margin="5,5,5,5">Otvori tabelu saradnika</Button>
+        <Label Grid.Column="1" Grid.Row="2">Id:</Label>
+        <TextBox x:Name="Id" Grid.Column="2" Grid.Row="2" Margin="2,2,2,2" />
+
+        <Label Grid.Column="1" Grid.Row="3">Opis Etikete:</Label>
+        <TextBox x:Name="Opis" MaxLength="20" Grid.Column="2" Grid.Row="3" Margin="2,2,2,2" ></TextBox>
+
+        <Label Grid.Column="1" Grid.Row="4">Slika:</Label>
+        <Button Grid.Column="2" Grid.Row="4" Width="150" Margin="5,5,5,5">Izaberi sliku</Button>
+
+        <Label Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" Margin="0,10,334,56" Grid.RowSpan="2">Opis:</Label>
+        <TextBox x:Name="ClrPcker" Grid.Column="2" Grid.Row="5" Margin="2,2,2,2"></TextBox>
+
+        <Button x:Name="AddProizvod" Grid.Column="2" Grid.Row="6" Width="100" Height="40" Content="Dodaj proizvod" Click="Button_Click" Margin="118,21,117,21"/>
+        <Button x:Name="Nazad" Content="Nazad" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="75" Grid.Column="1" Grid.Row="7"/>
+    </Grid>
+</Window>

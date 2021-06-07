@@ -8,17 +8,15 @@
         Title="MainWindow" Height="450" Width="800">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <Menu.ItemsPanel>
-                <!--Podkontrola koja određuje kako se item-i prikazuju.-->
-                <ItemsPanelTemplate>
-                    <!-- Specificiramo ne šta je u kontroli nego template koji je formira-->
-                    <DockPanel HorizontalAlignment="Stretch"></DockPanel>
-                    <!-- Prikazujemo preko Dock Panela koji preuzme sav prostor -->
-                </ItemsPanelTemplate>
-            </Menu.ItemsPanel>
-            <MenuItem Header="_Account">
-                <MenuItem Header="_File" Click="MenuItem_Click"></MenuItem>
-            </MenuItem>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="Saradnik">
+                    <MenuItem Header="Dodaj"/>
+                    <MenuItem Header="Izmeni" />
+                    <MenuItem Header="Obrisi" />
+                    <Separator />
+                    <MenuItem Header="_Exit" />
+                </MenuItem>
+            </Menu>
         </Menu>
         <Grid DockPanel.Dock="Bottom" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
 
