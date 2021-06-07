@@ -46,6 +46,18 @@ namespace HCI_T5._4
             s.Show();
         }
 
+        private void Klijent_Click(object sender, RoutedEventArgs e)
+        {
+            var s = new TabelaKlijenata(this.MainWindow);
+            s.Show();
+        }
+
+        private void Administrator_Click(object sender, RoutedEventArgs e)
+        {
+            var s = new TabelaAdministratora(this.MainWindow);
+            s.Show();
+        }
+
         private void AdminMainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             this.MainWindow.Close();

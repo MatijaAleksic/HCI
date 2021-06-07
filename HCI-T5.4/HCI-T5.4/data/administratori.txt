@@ -1,4 +1,4 @@
-﻿[
+[
     {
     "Ime": "Pera",
     "Prezime": "Peric",

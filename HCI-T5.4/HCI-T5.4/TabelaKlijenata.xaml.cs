@@ -14,53 +14,48 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-
-using System.Data;
-
-
-
 namespace HCI_T5._4
 {
     /// <summary>
-    /// Interaction logic for TabelaOrganizatora.xaml
+    /// Interaction logic for TabelaKlijenata.xaml
     /// </summary>
-    public partial class TabelaOrganizatora : Window
+    public partial class TabelaKlijenata : Window
     {
         private MainWindow MainWindow { get; set; }
-        public ObservableCollection<Organiser> Organizatori { get;  set; }
+        public ObservableCollection<Client> Klijenti { get; set; }
 
         Util util = new Util();
 
-        public TabelaOrganizatora()
+        public TabelaKlijenata()
         {
             InitializeComponent();
             this.DataContext = this;
         }
 
-        public TabelaOrganizatora(MainWindow window)
+        public TabelaKlijenata(MainWindow window)
         {
             InitializeComponent();
             this.DataContext = this;
 
             this.MainWindow = window;
 
-            Organizatori = this.MainWindow.Organizatori;
+            Klijenti = this.MainWindow.Klijenti;
         }
 
-        private void ObrisiOrganizatora_Click(object sender, RoutedEventArgs e)
+        private void ObrisiKlijenta_Click(object sender, RoutedEventArgs e)
         {
-            Organiser selectedOrganiser = (Organiser)dgrMain.SelectedItem;
+            Client selectedClient = (Client)dgrMain.SelectedItem;
 
-            if (selectedOrganiser != null )
+            if (selectedClient != null)
             {
-                foreach(Organiser org in this.MainWindow.Organizatori)
+                foreach (Client cli in this.MainWindow.Klijenti)
                 {
-                    if(selectedOrganiser.Username == org.Username && selectedOrganiser.Email == org.Email)
+                    if (selectedClient.Username == cli.Username && selectedClient.Email == cli.Email)
                     {
-                        this.MainWindow.Organizatori.Remove(org);
-                        Organizatori.Remove(org);
+                        this.MainWindow.Klijenti.Remove(cli);
+                        Klijenti.Remove(cli);
 
-                        this.util.write_to_file<Organiser>(this.MainWindow.Organizatori, MainWindow.pathOrganizatora);
+                        this.util.write_to_file<Client>(this.MainWindow.Klijenti, MainWindow.pathKlijenata);
                         break;
                     }
                 }
@@ -69,7 +64,7 @@ namespace HCI_T5._4
 
         private void SearchOrganizator_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
         {
-            var searched = Organizatori.Where(elem => elem.Ime.ToLower().StartsWith(SearchOrganizator.Text.ToLower()));
+            var searched = Klijenti.Where(elem => elem.Ime.ToLower().StartsWith(SearchOrganizator.Text.ToLower()));
 
             dgrMain.ItemsSource = searched;
         }

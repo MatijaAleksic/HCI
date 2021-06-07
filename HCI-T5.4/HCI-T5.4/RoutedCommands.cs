@@ -39,6 +39,26 @@ namespace HCI_T5._4
            }
            );
 
+        public static RoutedUICommand TabelaKlijenata = new RoutedUICommand(
+           "Otvara tabelu klijenata",
+           "Tabela Klijenata",
+           typeof(RoutedCommand),
+           new InputGestureCollection()
+           {
+                new KeyGesture(Key.C,ModifierKeys.Control)
+           }
+           );
+
+        public static RoutedUICommand TabelaAdministratora = new RoutedUICommand(
+           "Otvara tabelu klijenata",
+           "Tabela Klijenata",
+           typeof(RoutedCommand),
+           new InputGestureCollection()
+           {
+                new KeyGesture(Key.C,ModifierKeys.Control)
+           }
+           );
+
 
         public static RoutedUICommand Logout = new RoutedUICommand(
            "Za odjavljivanje korisnika",

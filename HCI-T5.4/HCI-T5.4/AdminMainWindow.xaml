@@ -11,7 +11,9 @@
         Title="AdminMainWindow" Height="450" Width="800">
 
     <Window.CommandBindings>
+        <CommandBinding Command="local:RoutedCommands.TabelaAdministratora" Executed="Administrator_Click"></CommandBinding>
         <CommandBinding Command="local:RoutedCommands.TabelaOrganizatora" Executed="Organizatori_Click"></CommandBinding>
+        <CommandBinding Command="local:RoutedCommands.TabelaKlijenata" Executed="Klijent_Click"></CommandBinding>
         <CommandBinding Command="local:RoutedCommands.Logout" Executed="Logout_Click"></CommandBinding>
     </Window.CommandBindings>
     
@@ -28,9 +30,9 @@
             </Menu.ItemsPanel>
 
             <MenuItem Header="_Korisnici">
-                <MenuItem Header="_Administratori"/>
+                <MenuItem Header="_Administratori" Command="local:RoutedCommands.TabelaAdministratora" ToolTip="Otvara tabelu administratora"/>
                 <MenuItem Header="_Organizatori" Command="local:RoutedCommands.TabelaOrganizatora" ToolTip="Otvara tabelu organizatora"/>
-                <MenuItem Header="_Klijenti"/>
+                <MenuItem Header="_Klijenti" Command="local:RoutedCommands.TabelaKlijenata" ToolTip="Otvara tabelu klijenata"/>
                 <MenuItem Header="_Saradnici"/>
             </MenuItem>
 
