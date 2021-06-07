@@ -5,16 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HCI_T5._4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="300">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <Menu DockPanel.Dock="Top">
                 <MenuItem Header="Saradnik">
-                    <MenuItem Header="Dodaj"/>
-                    <MenuItem Header="Izmeni" />
-                    <MenuItem Header="Obrisi" />
-                    <Separator />
-                    <MenuItem Header="_Exit" />
+                    <MenuItem Header="Dodaj sardnika"/>
+                    <MenuItem Header="Tabela saradnika" />
+                </MenuItem>
+                <MenuItem Header="Organizator">
+                    <MenuItem Header="Dodaj organizatora"/>
+                    <MenuItem Header="Tabela organizatora" />
+                </MenuItem>
+                <MenuItem Header="Proizvod">
+                    <MenuItem Header="Dodaj proizvod"/>
+                    <MenuItem Header="Tabela proizvoda" />
+                </MenuItem>
+                <MenuItem Header="Tabela dogadjaja">
                 </MenuItem>
             </Menu>
         </Menu>
