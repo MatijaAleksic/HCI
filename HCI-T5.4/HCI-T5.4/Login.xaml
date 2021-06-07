@@ -5,7 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HCI_T5._4"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="800">
+        Title="Login" Height="450" Width="800"
+        
+        Closing="Login_Closing">
+
+    <Window.CommandBindings>
+        <CommandBinding Command="local:RoutedCommands.Login" Executed="MenuItem_Click"></CommandBinding>
+        <CommandBinding Command="local:RoutedCommands.Register" Executed="MenuItem_Click1"></CommandBinding>
+    </Window.CommandBindings>
+    
+    
     <Grid>
         <Rectangle Height="280" VerticalAlignment="Top">
             <Rectangle.Fill>
@@ -49,8 +58,8 @@
                     <Label  HorizontalAlignment="Left" Grid.Column="0" Grid.Row="1" Content="Password:"/>
                 <PasswordBox  HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" x:Name="Password" Margin="0,10"  Height="30" Width="180"  FontFamily="Champagne &amp; Limousines" FontSize="18"/>
             </Grid>
-            <Button Width="75" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-110,189,0,0" Content="LOGIN"  Click="MenuItem_Click" RenderTransformOrigin="0.525,2.889"/>
-            <Button Width="75" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="190,189,0,0" Content="REGISTER"  Click="MenuItem_Click1" RenderTransformOrigin="0.525,2.889"/>
+            <Button Width="75" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-110,189,0,0" Content="LOGIN"  Command="local:RoutedCommands.Login" ToolTip="Login dugme da bi se ulogovali u sistem" RenderTransformOrigin="0.525,2.889"/>
+            <Button Width="75" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="190,189,0,0" Content="REGISTER"  Command="local:RoutedCommands.Register" ToolTip="Register dugme za registraciju novih klijenata" RenderTransformOrigin="0.525,2.889"/>
 
         </Grid>
     </Grid>

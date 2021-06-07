@@ -35,14 +35,14 @@ namespace HCI_T5._4
         public ObservableCollection<Organiser> Organizatori { get; set; }
         public ObservableCollection<Client> Klijenti { get; set; }
 
+        readonly public string pathAdministratora = @"..\..\..\data\administratori.txt";
+        readonly public string pathOrganizatora = @"..\..\..\data\organizatori.txt";
+        readonly public string pathKlijenata = @"..\..\..\data\klijenti.txt";
+
 
         public MainWindow()
         {
             this.Hide();
-
-            string pathAdministratora = @"..\..\..\data\administratori.txt";
-            string pathOrganizatora = @"..\..\..\data\organizatori.txt";
-            string pathKlijenata = @"..\..\..\data\klijenti.txt";
 
             Util util = new Util();
 
@@ -50,9 +50,11 @@ namespace HCI_T5._4
             Organizatori = util.read_file<Organiser>(pathOrganizatora);
             Klijenti = util.read_file<Client>(pathKlijenata);
 
+            var adminHome = new HCI_T5._4.AdminMainWindow(this);
+            adminHome.Show();
 
-            var login = new HCI_T5._4.Login(this);
-            login.Show();
+            //var login = new HCI_T5._4.Login(this);
+            //login.Show();
         }
 
 

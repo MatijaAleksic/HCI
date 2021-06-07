@@ -1,4 +1,4 @@
-﻿[
+[
 	{
 	  "Ime": "Savo",
 	  "Prezime": "Savic",

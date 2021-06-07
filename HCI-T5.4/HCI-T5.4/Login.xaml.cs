@@ -43,10 +43,12 @@ namespace HCI_T5._4
             {
                 if (admin.Username.Equals(Username.Text) && admin.Password.Equals(Password.Password))
                 {
-                    MessageBox.Show("Uspjesan login admin!");
-                    Application.Current.MainWindow = MainWindow;
+                    MessageBox.Show("Uspjesan login administrator!");
+                    var AdminMainWindow = new HCI_T5._4.AdminMainWindow(this.MainWindow);
+                    Application.Current.MainWindow = AdminMainWindow;
                     this.Close();
-                    this.MainWindow.Show();
+                    AdminMainWindow.Show();
+
                     uspesno = true;
                     break;
                 }
@@ -89,8 +91,13 @@ namespace HCI_T5._4
 
         private void MenuItem_Click1(object sender, RoutedEventArgs e)
         {
-            var register = new Register(this.MainWindow);
+            var register = new RegisterKlijent(this.MainWindow);
             register.Show();
+        }
+
+        private void Login_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            this.MainWindow.Close();
         }
     }
 }

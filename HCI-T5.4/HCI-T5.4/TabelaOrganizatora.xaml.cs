@@ -14,6 +14,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
+using System.Data;
+
+
+
 namespace HCI_T5._4
 {
     /// <summary>
@@ -21,14 +26,45 @@ namespace HCI_T5._4
     /// </summary>
     public partial class TabelaOrganizatora : Window
     {
-        public ObservableCollection<Organiser> Organisers
-        {
-            get;
-            set;
-        }
+        private MainWindow MainWindow { get; set; }
+        public ObservableCollection<Organiser> Organizatori { get;  set; }
+
+        Util util = new Util();
+
         public TabelaOrganizatora()
         {
             InitializeComponent();
+            this.DataContext = this;
+        }
+
+        public TabelaOrganizatora(MainWindow window)
+        {
+            InitializeComponent();
+            this.DataContext = this;
+
+            this.MainWindow = window;
+
+            Organizatori = this.MainWindow.Organizatori;
+        }
+
+        private void ObrisiOrganizatora_Click(object sender, RoutedEventArgs e)
+        {
+            Organiser selectedOrganiser = (Organiser)dgrMain.SelectedItem;
+
+            if (selectedOrganiser != null )
+            {
+                foreach(Organiser org in this.MainWindow.Organizatori)
+                {
+                    if(selectedOrganiser.Username == org.Username && selectedOrganiser.Email == org.Email)
+                    {
+                        this.MainWindow.Organizatori.Remove(org);
+                        Organizatori.Remove(org);
+
+                        this.util.write_to_file<Organiser>(this.MainWindow.Organizatori, MainWindow.pathOrganizatora);
+                        break;
+                    }
+                }
+            }
         }
     }
 }

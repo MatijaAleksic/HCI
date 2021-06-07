@@ -21,17 +21,17 @@ namespace HCI_T5._4
     /// </summary>
     
 
-    public partial class Register : Window
+    public partial class RegisterKlijent : Window
     {
         private MainWindow MainWindow { get; set; }
         string pathKlijenata = @"..\..\..\data\klijenti.txt";
 
-        public Register()
+        public RegisterKlijent()
         {
             InitializeComponent();
         }
 
-        public Register(MainWindow window)
+        public RegisterKlijent(MainWindow window)
         {
             InitializeComponent();
             this.MainWindow = window;
@@ -42,9 +42,9 @@ namespace HCI_T5._4
             Boolean uspesno = true;
             Util util = new Util();
 
-            foreach (Admin admin in this.MainWindow.Administratori)
+            foreach (Client client in this.MainWindow.Klijenti)
             {
-                if (admin.Username.Equals(Username.Text) && admin.Password.Equals(Password.Password))
+                if (client.Username.Equals(Username.Text) || client.Email.Equals(Email.Text))
                 {
                     uspesno = false;
                     MessageBox.Show("Korisnik sa ovim kredencijalima vec postoji!");
