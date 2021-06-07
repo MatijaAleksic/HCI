@@ -32,27 +32,24 @@ namespace HCI_T5._4
     {
 
         public ObservableCollection<Admin> Administratori { get; set; }
-
-        //ObservableCollection<Admin> _administratori { get; set; }
-        //public ObservableCollection<Admin> Administratori { get => _administratori; set => _administratori = value; }
+        public ObservableCollection<Organiser> Organizatori { get; set; }
+        public ObservableCollection<Client> Klijenti { get; set; }
 
 
         public MainWindow()
         {
-
             this.Hide();
 
             string pathAdministratora = @"..\..\..\data\administratori.txt";
+            string pathOrganizatora = @"..\..\..\data\organizatori.txt";
+            string pathKlijenata = @"..\..\..\data\klijenti.txt";
 
-            List<Admin> admini = new List<Admin>();
+            Util util = new Util();
 
-            using (StreamReader r = new StreamReader(pathAdministratora))
-            {
-                string json = r.ReadToEnd();
-                admini = JsonConvert.DeserializeObject<List<Admin>>(json);
-                r.Close();
-            }
-            Administratori =  new ObservableCollection<Admin>(admini);
+            Administratori = util.read_file<Admin>(pathAdministratora);
+            Organizatori = util.read_file<Organiser>(pathOrganizatora);
+            Klijenti = util.read_file<Client>(pathKlijenata);
+
 
             var login = new HCI_T5._4.Login(this);
             login.Show();

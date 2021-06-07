@@ -43,7 +43,37 @@ namespace HCI_T5._4
             {
                 if (admin.Username.Equals(Username.Text) && admin.Password.Equals(Password.Password))
                 {
-                    MessageBox.Show("Uspjesan login");
+                    MessageBox.Show("Uspjesan login admin!");
+                    Application.Current.MainWindow = MainWindow;
+                    this.Close();
+                    this.MainWindow.Show();
+                    uspesno = true;
+                    break;
+                }
+            }
+
+            foreach (Organiser organiser in this.MainWindow.Organizatori)
+            {
+                if (uspesno) { break; }
+
+                if (organiser.Username.Equals(Username.Text) && organiser.Password.Equals(Password.Password))
+                {
+                    MessageBox.Show("Uspjesan login organizer!");
+                    Application.Current.MainWindow = MainWindow;
+                    this.Close();
+                    this.MainWindow.Show();
+                    uspesno = true;
+                    break;
+                }
+            }
+
+            foreach (Client klient in this.MainWindow.Klijenti)
+            {
+                if (uspesno) { break; }
+
+                if (klient.Username.Equals(Username.Text) && klient.Password.Equals(Password.Password))
+                {
+                    MessageBox.Show("Uspjesan login klijent!");
                     Application.Current.MainWindow = MainWindow;
                     this.Close();
                     this.MainWindow.Show();
