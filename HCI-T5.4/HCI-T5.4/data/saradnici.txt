@@ -13,18 +13,6 @@
 ,
 
 {
-  "Ime": "Kum",
-  "Adresa": "Carice Milice 3",
-  "Grad": "Futog",
-  "Type": {
-    "Ime": "Restorani"
-  },
-  "Slicica": null,
-  "Proizvodi": null
-}
-,
-
-{
   "Ime": "Maric",
   "Adresa": "Krajiska 83",
   "Grad": "Futog",

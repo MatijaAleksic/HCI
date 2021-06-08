@@ -37,7 +37,7 @@ namespace HCI_T5._4
 
             this.DataContext = this;
             this.MainWindow = window;
-            
+
             Zahtevi = this.MainWindow.Zahtevi;
 
             /*Client c = new Client("asdf", "asdf", "asdf", "asdf", "asdf");

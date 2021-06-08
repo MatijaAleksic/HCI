@@ -56,7 +56,7 @@ namespace HCI_T5._4
 
         public MainWindow()
         {
-            //this.Hide();
+            this.Hide();
 
             Administratori = util.read_file<Admin>(pathAdministratora);
             Organizatori = util.read_file<Organiser>(pathOrganizatora);
@@ -88,6 +88,8 @@ namespace HCI_T5._4
             //login.DataContext = this;
             //login.Show();
         }
+
+        
 
         private void Logout_Click(object sender, RoutedEventArgs e)
         {

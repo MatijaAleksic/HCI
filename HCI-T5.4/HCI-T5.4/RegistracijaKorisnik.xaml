@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HCI_T5._4"
         mc:Ignorable="d"
-        Title="RegistracijaKorisnik" Height="400" Width="300">
+        Title="RegistracijaKorisnik" Height="400" Width="320">
     <Grid>
         <Label Content="Registracija korisnika" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Gray" FontSize="18"/>
 
@@ -19,7 +19,6 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using HCI_T5._4.modeli;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,7 +22,7 @@ namespace HCI_T5._4
     public partial class AdminMainWindow : Window
     {
         private MainWindow MainWindow { get; set; }
-
+        public ObservableCollection<CelebrationRequest> Zahtevi { get; set; }
 
         public AdminMainWindow()
         {
@@ -30,7 +32,10 @@ namespace HCI_T5._4
         public AdminMainWindow(MainWindow window)
         {
             InitializeComponent();
+            this.DataContext = this;
             this.MainWindow = window;
+
+            Zahtevi = this.MainWindow.Zahtevi;
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)
@@ -71,6 +76,13 @@ namespace HCI_T5._4
         private void CommandBinding_Executed(object sender, ExecutedRoutedEventArgs e)
         {
 
+        }
+
+        private void SearchZahtev_KeyUp(object sender, KeyEventArgs e)
+        {
+            var searched = Zahtevi.Where(elem => elem.Grad.ToLower().StartsWith(SearchZahtev.Text.ToLower()));
+
+            dgrMain.ItemsSource = searched;
         }
     }
 }

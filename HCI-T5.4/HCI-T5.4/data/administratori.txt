@@ -27,4 +27,58 @@
 }
 ,
 
+{
+  "Ime": "Mika",
+  "Prezime": "Mikic",
+  "Email": "mikica@dada.com",
+  "Username": "mikica",
+  "Password": "mikica"
+}
+,
+
+{
+  "Ime": "Sima",
+  "Prezime": "Simic",
+  "Email": "simica@dada.com",
+  "Username": "simica",
+  "Password": "simica"
+}
+,
+
+{
+  "Ime": "Nemanja",
+  "Prezime": "Rokvic",
+  "Email": "nemus@sdasd.com",
+  "Username": "roland",
+  "Password": "roland"
+}
+,
+
+{
+  "Ime": "Vlada",
+  "Prezime": "Gavrilovic",
+  "Email": "glavonja@dasda.com",
+  "Username": "glavonja",
+  "Password": "glavonja"
+}
+,
+
+{
+  "Ime": "Stefan",
+  "Prezime": "Belancic",
+  "Email": "debeli@dadds.com",
+  "Username": "debeli",
+  "Password": "debeli"
+}
+,
+
+{
+  "Ime": "Jelena",
+  "Prezime": "Tanasic",
+  "Email": "krava@dasda.com",
+  "Username": "krava",
+  "Password": "krava"
+}
+,
+
 ]

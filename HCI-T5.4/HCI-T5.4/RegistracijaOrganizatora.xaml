@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HCI_T5._4"
         mc:Ignorable="d"
-        Title="RegistracijaOrganizatora" Height="400" Width="300">
+        Title="RegistracijaOrganizatora" Height="400" Width="320">
     <Grid>
         <Label Content="Registracija organizatora" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Gray" FontSize="18"/>
 
@@ -21,21 +21,20 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
 
             <Label  Margin="5,5,5,5" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" Content="Ime:"/>
-            <TextBox Margin="5,5,5,5" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="0" x:Name="Firstname" Height="30" Width="180"  FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.501,0.433"/>
+            <TextBox Margin="5,5,5,5" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="0" x:Name="Firstname" Height="30" Width="150"  FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.501,0.433"/>
 
             <Label  Margin="5,5,5,5" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="1" Content="Prezime:"/>
-            <TextBox Margin="5,5,5,5" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="1" x:Name="Lastname" Height="30" Width="180"  FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.501,0.433"/>
+            <TextBox Margin="5,5,5,5" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="1" x:Name="Lastname" Height="30" Width="150"  FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.501,0.433"/>
 
             <Label  Margin="5,5,5,5" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="2" Content="Email:"/>
-            <TextBox Margin="5,5,5,5" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="2" x:Name="Email" Height="30" Width="180"  FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.51,0.536"/>
+            <TextBox Margin="5,5,5,5" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="2" x:Name="Email" Height="30" Width="150"  FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.51,0.536"/>
 
             <Label  Margin="5,5,5,5" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="3" Content="Korisnicko ime:"/>
-            <TextBox Margin="5,5,5,5" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="3" x:Name="Username" Height="30" Width="180"  FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.501,0.433"/>
+            <TextBox Margin="5,5,5,5" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="3" x:Name="Username" Height="30" Width="150"  FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.501,0.433"/>
 
             <Label  Margin="5,5,5,5" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="4" Content="Lozinka:"/>
             <PasswordBox  Margin="5,5,5,5" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="4" x:Name="Password"  Height="30" Width="180"  FontFamily="Champagne &amp; Limousines" FontSize="18"/>
