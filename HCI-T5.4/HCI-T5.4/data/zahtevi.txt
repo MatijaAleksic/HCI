@@ -1,0 +1,76 @@
+[
+
+{
+  "VrstaProslave": "Vrsta1",
+  "Budzet": 100,
+  "Datum": "2021-06-08T14:24:12.2916581+02:00",
+  "Grad": "Grad1",
+  "Proizvodi": "torta neka nek bude, alkohol i trebe",
+  "Status": 1,
+  "BrojPonuda": 0,
+  "Klijent": {
+    "Ime": "Milos",
+    "Prezime": "Milosevic",
+    "Email": "milos@gmail.com",
+    "Username": "milos",
+    "Password": "milosevic"
+  },
+  "Organizator": {
+    "Ime": "Savo",
+     "Prezime": "Savic",
+     "Email": "savo@gmail.com",
+     "Username": "savo",
+     "Password": "savic"
+  }
+}
+,
+{
+  "VrstaProslave": "Vrsta2",
+  "Budzet": 150,
+  "Datum": "2021-06-08T14:24:12.2916581+02:00",
+  "Grad": "Grad2",
+  "Proizvodi": "sampanjac i sve-pare",
+  "Status": 1,
+  "BrojPonuda": 0,
+  "Klijent": {
+    "Ime": "David",
+    "Prezime": "Davidovic",
+    "Email": "david@gmail.com",
+    "Username": "david",
+    "Password": "davidovic"
+  },
+  "Organizator": {
+    "Ime": "Savo",
+     "Prezime": "Savic",
+     "Email": "savo@gmail.com",
+     "Username": "savo",
+     "Password": "savic"
+  }
+}
+,
+{
+  "VrstaProslave": "asdf",
+  "Budzet": 1010,
+  "Datum": "2021-06-08T14:24:12.2916581+02:00",
+  "Grad": "asdf",
+  "Proizvodi": "asdf",
+  "Status": 1,
+  "BrojPonuda": 0,
+  "Klijent": {
+    "Ime": "asdf",
+    "Prezime": "asdf",
+    "Email": "asdf",
+    "Username": "asdf",
+    "Password": "asdf"
+  },
+  "Organizator": {
+    "Ime": "Savo",
+     "Prezime": "Savic",
+     "Email": "savo@gmail.com",
+     "Username": "savo",
+     "Password": "savic"
+  }
+}
+,
+
+]

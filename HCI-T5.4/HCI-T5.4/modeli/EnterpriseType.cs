@@ -31,5 +31,10 @@ namespace HCI_T5._4.modeli
 				}
 			}
 		}
+
+		public EnterpriseType(string _ime)
+		{
+			this._ime = _ime;
+		}
 	}
 }

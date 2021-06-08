@@ -1,3 +1,48 @@
 [
 
+{
+  "Ime": "Milos",
+  "Prezime": "Milosevic",
+  "Email": "milos@gmail.com",
+  "Username": "milos",
+  "Password": "milosevic"
+}
+,
+
+{
+  "Ime": "David",
+  "Prezime": "Davidovic",
+  "Email": "david@gmail.com",
+  "Username": "david",
+  "Password": "davidovic"
+}
+,
+
+{
+  "Ime": "matija",
+  "Prezime": "matija",
+  "Email": "matija",
+  "Username": "matija",
+  "Password": "matija"
+}
+,
+
+{
+  "Ime": "Uros",
+  "Prezime": "Nenadic",
+  "Email": "dsauda@addas.com",
+  "Username": "uros",
+  "Password": "uros"
+}
+,
+
+{
+  "Ime": "matija",
+  "Prezime": "aleksic",
+  "Email": "dasdada",
+  "Username": "matija1",
+  "Password": "matija1"
+}
+,
+
 ]

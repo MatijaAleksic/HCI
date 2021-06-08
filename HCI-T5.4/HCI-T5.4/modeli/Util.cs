@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 
 namespace HCI_T5._4.modeli
 {
-    class Util
+    public class Util
     {
 
         public ObservableCollection<T> read_file<T>(String name)
@@ -28,6 +28,12 @@ namespace HCI_T5._4.modeli
 
         public void write_to_file<T>(ObservableCollection<T> lista, String path)
         {
+            /*var settings = new JsonSerializerSettings
+            {
+                DateFormatString = "yyyy-MM-ddTH:mm:ss.fffZ",
+                DateTimeZoneHandling = DateTimeZoneHandling.Utc
+            };*/
+
             using (StreamWriter w = new StreamWriter(path))
             {
                 w.WriteLine("[\n");

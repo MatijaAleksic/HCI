@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using Newtonsoft.Json;
 
 namespace HCI_T5._4.modeli
 {
@@ -105,6 +106,7 @@ namespace HCI_T5._4.modeli
 		}
 
 
+		[JsonConstructor]
 		public Organiser(string ime, string prezime, string email, string username, string password)
 		{
 			_ime = ime;

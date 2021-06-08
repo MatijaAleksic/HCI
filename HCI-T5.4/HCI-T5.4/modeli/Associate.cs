@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Windows.Media.Imaging;
 using System.ComponentModel;
 
+using Newtonsoft.Json;
+
 namespace HCI_T5._4.modeli
 {
 	public class Associate : INotifyPropertyChanged
@@ -124,6 +126,28 @@ namespace HCI_T5._4.modeli
 				}
 			}
 		}
+
+		public Associate(string _ime,EnterpriseType _type, string _adresa, string _grad,List<Product> _proizvodi, WriteableBitmap _slicica)
+		{
+			this._ime = _ime;
+			this._type = _type;
+			this._adresa = _adresa;
+			this._grad = _grad;
+			this._proizvodi = _proizvodi;
+			this._slicica = _slicica;
+		}
+
+		[JsonConstructor]
+		public Associate(string _ime, EnterpriseType _type, string _adresa, string _grad, List<Product> _proizvodi)
+		{
+			this._ime = _ime;
+			this._type = _type;
+			this._adresa = _adresa;
+			this._grad = _grad;
+			this._proizvodi = _proizvodi;
+		}
+
+
 
 	}
 }

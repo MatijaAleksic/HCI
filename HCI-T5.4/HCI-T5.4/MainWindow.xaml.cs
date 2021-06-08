@@ -36,24 +36,27 @@ namespace HCI_T5._4
         public ObservableCollection<Client> Klijenti { get; set; }
 
         public ObservableCollection<EnterpriseType> TipoviPreduzeca { get; set; }
+        public ObservableCollection<CelebrationRequest> Zahtevi { get; set; }
 
         readonly public string pathAdministratora = @"..\..\..\data\administratori.txt";
         readonly public string pathOrganizatora = @"..\..\..\data\organizatori.txt";
         readonly public string pathKlijenata = @"..\..\..\data\klijenti.txt";
         readonly public string pathTipPreduzeca = @"..\..\..\data\tippreduzeca.txt";
+        readonly public string pathZahtevi = @"..\..\..\data\zahtevi.txt";
+
+        public Util util = new Util();
 
 
         public MainWindow()
         {
             this.Hide();
 
-            Util util = new Util();
-
             Administratori = util.read_file<Admin>(pathAdministratora);
             Organizatori = util.read_file<Organiser>(pathOrganizatora);
             Klijenti = util.read_file<Client>(pathKlijenata);
 
             TipoviPreduzeca = util.read_file<EnterpriseType>(pathTipPreduzeca);
+            Zahtevi = util.read_file<CelebrationRequest>(pathZahtevi);
 
             var clientHome = new HCI_T5._4.KlientMainWindow(this);
             clientHome.Show();

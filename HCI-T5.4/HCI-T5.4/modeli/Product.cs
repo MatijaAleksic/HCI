@@ -2,6 +2,8 @@
 using System.ComponentModel;
 using System.Windows.Media.Imaging;
 
+using Newtonsoft.Json;
+
 namespace HCI_T5._4.modeli
 {
     [Serializable]
@@ -18,7 +20,7 @@ namespace HCI_T5._4.modeli
             }
         }
 
-        public string Id { get; set; }
+        //private Associate _saradnik;
         private String _ime;
         private int _cena;
 
@@ -26,6 +28,19 @@ namespace HCI_T5._4.modeli
         private WriteableBitmap _slicica;
 
 
+
+        /*public Associate Saradnik
+        {
+            get
+            {
+                return _saradnik;
+            }
+            set
+            {
+                _saradnik = value;
+                OnPropertyChanged("Saradnik");
+            }
+        }*/
 
         public String Ime
         {
@@ -50,6 +65,20 @@ namespace HCI_T5._4.modeli
                 _cena = value;
                 OnPropertyChanged("Cena");
             }
+        }
+
+        public Product(String _ime, int _cena, WriteableBitmap _slicica) //( Associate _saradnik, String _ime, int _cena, WriteableBitmap _slicica)
+        {
+            this._ime = _ime;
+            this._cena = _cena;
+            this._slicica = _slicica;
+        }
+
+        [JsonConstructor]
+        public Product(String _ime, int _cena) 
+        {
+            this._ime = _ime;
+            this._cena = _cena;
         }
 
 

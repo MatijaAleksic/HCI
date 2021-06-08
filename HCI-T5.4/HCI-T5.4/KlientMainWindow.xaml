@@ -57,7 +57,17 @@
 
             <DataGrid x:Name="dgrMain" ItemsSource="{Binding Path=Zahtevi}"
                   SelectionMode="Single" SelectionUnit="FullRow"
-                  CanUserReorderColumns="True" CanUserResizeColumns="True" CanUserSortColumns="True" Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="3" Margin="10,10,10,10"/>
+                  CanUserReorderColumns="True" CanUserResizeColumns="True" CanUserSortColumns="True" Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="3" Margin="10,10,10,10" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding VrstaProslave}" Header="VrstaProslave" />
+                    <DataGridTextColumn Binding="{Binding Budzet}" Header="Budzet" />
+                    <DataGridTextColumn Binding="{Binding Datum}" Header="Datum" />
+                    <DataGridTextColumn Binding="{Binding Grad}" Header="Grad" />
+                    <DataGridTextColumn Binding="{Binding Status}" Header="Status" />
+                    <DataGridTextColumn Binding="{Binding BrojPonuda}" Header="BrojPonuda" />
+                    <DataGridTextColumn Binding="{Binding Organizator.Ime}" Header="Organizator" />
+                </DataGrid.Columns>
+            </DataGrid>
 
             <Grid Grid.Column="3" Grid.Row="4" Margin="10,10,10,10" DataContext="{Binding ElementName=dgrMain,Path=SelectedItem}">
                 <Grid.RowDefinitions>
