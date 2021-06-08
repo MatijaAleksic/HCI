@@ -38,6 +38,7 @@ namespace HCI_T5._4
         public ObservableCollection<EnterpriseType> TipoviPreduzeca { get; set; }
         public ObservableCollection<CelebrationRequest> Zahtevi { get; set; }
         public ObservableCollection<Associate> Saradnici { get; set; }
+        public ObservableCollection<CelebrationOffer> Ponude { get; set; }
 
         readonly public string pathAdministratora = @"..\..\..\data\administratori.txt";
         readonly public string pathOrganizatora = @"..\..\..\data\organizatori.txt";
@@ -45,6 +46,9 @@ namespace HCI_T5._4
         readonly public string pathTipPreduzeca = @"..\..\..\data\tippreduzeca.txt";
         readonly public string pathZahtevi = @"..\..\..\data\zahtevi.txt";
         readonly public string pathSaradnici = @"..\..\..\data\saradnici.txt";
+        readonly public string pathPonude = @"..\..\..\data\ponude.txt";
+
+        public String loggedUsername;
 
 
         public Util util = new Util();
@@ -62,15 +66,16 @@ namespace HCI_T5._4
             Zahtevi = util.read_file<CelebrationRequest>(pathZahtevi);
             Saradnici = util.read_file<Associate>(pathSaradnici);
 
+            Ponude = new ObservableCollection<CelebrationOffer>();
+
             //var clientHome = new HCI_T5._4.KlientMainWindow(this);
             //clientHome.Show();
 
             //var adminHome = new HCI_T5._4.AdminMainWindow(this);
             //adminHome.Show();
 
-            //var login = new HCI_T5._4.Login(this);
-            //login.Show();
-            this.DataContext = this;
+            var login = new HCI_T5._4.Login(this);
+            login.Show();
         }
 
 

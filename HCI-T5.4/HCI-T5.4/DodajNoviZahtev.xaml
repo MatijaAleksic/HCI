@@ -1,0 +1,59 @@
+﻿<Window x:Class="HCI_T5._4.DodajNoviZahtev"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HCI_T5._4"
+        mc:Ignorable="d"
+        Title="DodajNoviZahtev" Height="450" Width="358">
+    <Grid>
+        <Label Content="Dodaj novi zahtev" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Gray" FontSize="18"/>
+
+        <Grid VerticalAlignment="Top" Margin="0,80,0,0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+
+            <Label  Margin="5,5,5,5" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" Content="Vrsta Proslave:"/>
+            <TextBox Margin="5,5,5,5" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="0" x:Name="VrstaProslave" Height="30" Width="180"  FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.501,0.433"/>
+
+            <Label  Margin="5,5,5,5" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="1" Content="Budzet:"/>
+            <TextBox Margin="5,5,5,5" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="1" x:Name="Budzet" Height="30" Width="180" PreviewTextInput="NumberValidationTextBox"  FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.501,0.433"/>
+
+            <Label  Margin="5,5,5,5" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="2" Content="Datum:"/>
+            <DatePicker Margin="5,5,5,5" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="2" x:Name="Datum" Height="30" Width="180" FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.501,0.433"/>
+
+            <Label  Margin="5,5,5,5" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="3" Content="Grad:"/>
+            <TextBox Margin="5,5,5,5" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="3" x:Name="Grad" Height="30" Width="180"  FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.501,0.433"/>
+
+            <Label  Margin="5,5,5,5" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="4" Content="Proizvodi:"/>
+            <TextBox Margin="5,5,5,5" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="4" x:Name="Proizvodi" Height="30" Width="180"  FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.501,0.433"/>
+
+
+            <Label  Margin="5,5,5,5" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="5" Content="Organizator:"/>
+            <ComboBox Margin="5,5,5,5" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="5" ItemsSource="{Binding Organizatori}" x:Name="Organizator" Height="30" Width="180"  FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.501,0.433">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Ime}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            
+            <Button Width="100" Height="40"  Grid.Column="1" Grid.Row="6" Margin="29,29,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"  Content="Dodaj"  Click="Dodaj_Click" RenderTransformOrigin="0.525,2.889"/>
+        </Grid>
+    </Grid>
+</Window>
