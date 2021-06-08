@@ -66,10 +66,23 @@ namespace HCI_T5._4
             this.Close();
         }
 
+        private void NapraviZahtev_Click(object sender, RoutedEventArgs e)
+        {
+            //this.Hide();
+            var zahtev = new HCI_T5._4.DodajNoviZahtev(this.MainWindow);
+            zahtev.Show();
+        }
+
+        private void PregledajPonude_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Pregledaj ponude!");
+        }
+
         private void KlientMainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             this.MainWindow.Close();
         }
+
 
         private void SearchZahtev_KeyUp(object sender, KeyEventArgs e)
         {
@@ -77,5 +90,6 @@ namespace HCI_T5._4
 
             dgrMain.ItemsSource = searched;
         }
+
     }
 }

@@ -9,7 +9,7 @@
         Closing="KlientMainWindow_Closing"
         
         Title="KlientMainWindow" Height="450" Width="800">
-    
+
     <Window.CommandBindings>
         <CommandBinding Command="local:RoutedCommands.Logout" Executed="Logout_Click"></CommandBinding>
     </Window.CommandBindings>
@@ -86,7 +86,9 @@
 
             </Grid>
 
-            <Button x:Name="ObrisiAdministratora" Content="Obrisi" Grid.Column="5" Grid.Row="4" Width="100" Height="40"  />
+            <Button Content="Nparavi novi zahtev" Grid.Column="5" Grid.Row="4" Width="150" Height="40" Click="NapraviZahtev_Click" />
+            <Button Content="Pregledaj ponude" Grid.Column="3" Grid.Row="4" Width="150" Height="40" Click="PregledajPonude_Click"  />
+
         </Grid>
     </DockPanel>
 </Window>
