@@ -37,7 +37,7 @@
             </MenuItem>
         </Menu>
         <Grid DockPanel.Dock="Bottom" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-
+    
         </Grid>
     </DockPanel>
 </Window>

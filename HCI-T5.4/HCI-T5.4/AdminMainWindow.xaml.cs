@@ -52,6 +52,11 @@ namespace HCI_T5._4
             s.Show();
         }
 
+        private void Saradnici_Click(object sender, RoutedEventArgs e)
+        {
+            var s = new TabelaSaradnika(this.MainWindow);
+            s.Show();
+        }
         private void Administrator_Click(object sender, RoutedEventArgs e)
         {
             var s = new TabelaAdministratora(this.MainWindow);
@@ -63,5 +68,9 @@ namespace HCI_T5._4
             this.MainWindow.Close();
         }
 
+        private void CommandBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+
+        }
     }
 }

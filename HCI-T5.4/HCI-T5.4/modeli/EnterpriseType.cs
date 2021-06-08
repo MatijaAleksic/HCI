@@ -1,4 +1,4 @@
-﻿using System.ComponentModel;
+﻿	using System.ComponentModel;
 
 namespace HCI_T5._4.modeli
 {

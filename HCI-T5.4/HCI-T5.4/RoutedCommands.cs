@@ -59,6 +59,16 @@ namespace HCI_T5._4
            }
            );
 
+        public static RoutedUICommand TabelaSaradnika = new RoutedUICommand(
+           "Otvara tabelu saradnika",
+           "Tabela Saradnika",
+           typeof(RoutedCommand),
+           new InputGestureCollection()
+           {
+                new KeyGesture(Key.G,ModifierKeys.Control)
+           }
+           );
+
 
         public static RoutedUICommand Logout = new RoutedUICommand(
            "Za odjavljivanje korisnika",

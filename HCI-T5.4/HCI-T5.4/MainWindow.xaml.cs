@@ -52,7 +52,7 @@ namespace HCI_T5._4
 
         public MainWindow()
         {
-            this.Hide();
+            //this.Hide();
 
             Administratori = util.read_file<Admin>(pathAdministratora);
             Organizatori = util.read_file<Organiser>(pathOrganizatora);
@@ -62,14 +62,15 @@ namespace HCI_T5._4
             Zahtevi = util.read_file<CelebrationRequest>(pathZahtevi);
             Saradnici = util.read_file<Associate>(pathSaradnici);
 
-            var clientHome = new HCI_T5._4.KlientMainWindow(this);
-            clientHome.Show();
+            //var clientHome = new HCI_T5._4.KlientMainWindow(this);
+            //clientHome.Show();
 
             //var adminHome = new HCI_T5._4.AdminMainWindow(this);
             //adminHome.Show();
 
             //var login = new HCI_T5._4.Login(this);
             //login.Show();
+            this.DataContext = this;
         }
 
 

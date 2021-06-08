@@ -1,27 +1,39 @@
-﻿[
+[
 
 {
-  "Ime": "Vrsta1",
+  "Ime": "Riza",
+  "Adresa": "Cara Lazara 111",
+  "Grad": "Futog",
   "Type": {
-      "Ime": "Tip1"
-    },
-  "Adresa": "Adresa1",
-  "Grad": "Grad1",
+    "Ime": "Poslasticarnica"
+  },
   "Slicica": null,
-    "Proizvodi": [
-      {
-        "Ime": "prdukt1",
-        "Cena": 100
-      },
-      {
-        "Ime": "prdukt2",
-        "Cena": 200
-      },
-      {
-        "Ime": "prdukt3",
-        "Cena": 300
-      }
-    ]
+  "Proizvodi": null
 }
 ,
+
+{
+  "Ime": "Kum",
+  "Adresa": "Carice Milice 3",
+  "Grad": "Futog",
+  "Type": {
+    "Ime": "Restorani"
+  },
+  "Slicica": null,
+  "Proizvodi": null
+}
+,
+
+{
+  "Ime": "Maric",
+  "Adresa": "Krajiska 83",
+  "Grad": "Futog",
+  "Type": {
+    "Ime": "Cvecara"
+  },
+  "Slicica": null,
+  "Proizvodi": null
+}
+,
+
 ]
