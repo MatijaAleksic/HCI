@@ -63,11 +63,15 @@ namespace HCI_T5._4
                 {
                     MessageBox.Show("Uspjesan login organizer!");
                     this.MainWindow.loggedUsername = Username.Text;
-                    Application.Current.MainWindow = MainWindow;
+                    var OrganiserMainWindow = new HCI_T5._4.OrganiserMainWindow(this.MainWindow);
+                    Application.Current.MainWindow = OrganiserMainWindow;
                     this.Close();
-                    this.MainWindow.Show();
+                    OrganiserMainWindow.Show();
+      
                     uspesno = true;
                     break;
+                    
+
                 }
             }
 

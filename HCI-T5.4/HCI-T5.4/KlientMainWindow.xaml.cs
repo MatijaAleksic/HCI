@@ -37,6 +37,11 @@ namespace HCI_T5._4
 
             this.DataContext = this;
             this.MainWindow = window;
+<<<<<<< HEAD
+=======
+
+            Zahtevi = this.MainWindow.Zahtevi;
+>>>>>>> 6f03f7e4f1bf8ffcc3709960f0cc349efc6c841d
 
 
             Zahtevi = new ObservableCollection<CelebrationRequest>();
