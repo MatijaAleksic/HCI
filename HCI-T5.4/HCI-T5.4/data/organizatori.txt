@@ -9,4 +9,13 @@
 }
 ,
 
+{
+  "Ime": "pera",
+  "Prezime": "peric",
+  "Email": "peric@sdad.com",
+  "Username": "perica",
+  "Password": "perica"
+}
+,
+
 ]

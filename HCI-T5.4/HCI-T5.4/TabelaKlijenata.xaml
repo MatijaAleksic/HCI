@@ -51,7 +51,7 @@
             <TextBlock Grid.Column="0" Grid.Row="1">Ime:</TextBlock>
             <TextBlock Grid.Column="0" Grid.Row="2">Prezime:</TextBlock>
             <TextBlock Grid.Column="0" Grid.Row="3">Email:</TextBlock>
-            <TextBlock Grid.Column="0" Grid.Row="4">Username:</TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="4">Lozinka:</TextBlock>
 
 
             <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding Path=Ime}" Margin="2"></TextBox>
@@ -61,6 +61,7 @@
 
         </Grid>
 
-        <Button x:Name="ObrisiKlijenta" Content="Delete" Grid.Column="5" Grid.Row="4" Width="100" Height="40" Click="ObrisiKlijenta_Click" />
+        <Button x:Name="ObrisiKlijenta" Content="Obrisi klijenta" Grid.Column="5" Grid.Row="4" Width="100" Height="40" Click="ObrisiKlijenta_Click"  HorizontalAlignment="Right" />
+        <Button x:Name="DodajKlijenta" Content="Dodaj klijenta" Grid.Column="5" Grid.Row="4" Width="100" Height="40"  Click="DodajKlijenta_Click" HorizontalAlignment="Left" RenderTransformOrigin="0.471,1.128" />
     </Grid>
 </Window>
