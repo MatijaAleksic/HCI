@@ -1,0 +1,27 @@
+﻿[
+
+{
+  "Ime": "Vrsta1",
+  "Type": {
+      "Ime": "Tip1"
+    },
+  "Adresa": "Adresa1",
+  "Grad": "Grad1",
+  "Slicica": null,
+    "Proizvodi": [
+      {
+        "Ime": "prdukt1",
+        "Cena": 100
+      },
+      {
+        "Ime": "prdukt2",
+        "Cena": 200
+      },
+      {
+        "Ime": "prdukt3",
+        "Cena": 300
+      }
+    ]
+}
+,
+]
