@@ -125,4 +125,29 @@
 }
 ,
 
+{
+  "VrstaProslave": "y",
+  "Budzet": 123,
+  "Datum": "2021-06-08T00:00:00+02:00",
+  "Grad": "y",
+  "Proizvodi": "y",
+  "Status": 1,
+  "BrojPonuda": 0,
+  "Klijent": {
+    "Ime": "a",
+    "Prezime": "a",
+    "Email": "a",
+    "Username": "a",
+    "Password": "a"
+  },
+  "Organizator": {
+    "Ime": "pera",
+    "Prezime": "peric",
+    "Email": "peric@sdad.com",
+    "Username": "perica",
+    "Password": "perica"
+  }
+}
+,
+
 ]

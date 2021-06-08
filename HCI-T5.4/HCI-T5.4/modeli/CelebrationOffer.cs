@@ -97,5 +97,13 @@ namespace HCI_T5._4.modeli
 			}
 		}
 
+		public CelebrationOffer(CelebrationRequest _zahtev,Associate _saradnik,	CelebrationOfferStatus _status,
+			List<Product> _proizvodi)
+		{
+			this._zahtev = _zahtev;
+			this._saradnik = _saradnik;
+			this._status = _status;
+			this._proizvodi = _proizvodi;
+		}
 	}
 }

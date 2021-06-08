@@ -44,6 +44,7 @@ namespace HCI_T5._4
                 if (admin.Username.Equals(Username.Text) && admin.Password.Equals(Password.Password))
                 {
                     MessageBox.Show("Uspjesan login administrator!");
+                    this.MainWindow.loggedUsername = Username.Text;
                     var AdminMainWindow = new HCI_T5._4.AdminMainWindow(this.MainWindow);
                     Application.Current.MainWindow = AdminMainWindow;
                     this.Close();
@@ -61,6 +62,7 @@ namespace HCI_T5._4
                 if (organiser.Username.Equals(Username.Text) && organiser.Password.Equals(Password.Password))
                 {
                     MessageBox.Show("Uspjesan login organizer!");
+                    this.MainWindow.loggedUsername = Username.Text;
                     Application.Current.MainWindow = MainWindow;
                     this.Close();
                     this.MainWindow.Show();
@@ -75,10 +77,16 @@ namespace HCI_T5._4
 
                 if (klient.Username.Equals(Username.Text) && klient.Password.Equals(Password.Password))
                 {
+                    //var clientHome = new HCI_T5._4.KlientMainWindow(this);
+                    //clientHome.Show();
+
+
                     MessageBox.Show("Uspjesan login klijent!");
-                    Application.Current.MainWindow = MainWindow;
+                    this.MainWindow.loggedUsername = Username.Text;
+                    var clientHome = new HCI_T5._4.KlientMainWindow(this.MainWindow);
+                    Application.Current.MainWindow = clientHome;
                     this.Close();
-                    this.MainWindow.Show();
+                    clientHome.Show();
                     uspesno = true;
                     break;
                 }

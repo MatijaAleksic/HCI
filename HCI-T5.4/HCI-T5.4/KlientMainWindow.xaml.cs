@@ -75,7 +75,30 @@ namespace HCI_T5._4
 
         private void PregledajPonude_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Pregledaj ponude!");
+            CelebrationRequest selectedClient = (CelebrationRequest)dgrMain.SelectedItem;
+
+            if (selectedClient != null)
+            {
+                var ponude = new HCI_T5._4.TabelaPonuda(this.MainWindow, selectedClient);
+                ponude.Show();
+            }
+
+            /*Client selectedClient = (Client)dgrMain.SelectedItem;
+
+            if (selectedClient != null)
+            {
+                foreach (Client cli in this.MainWindow.Klijenti)
+                {
+                    if (selectedClient.Username == cli.Username && selectedClient.Email == cli.Email)
+                    {
+                        this.MainWindow.Klijenti.Remove(cli);
+                        Klijenti.Remove(cli);
+
+                        this.util.write_to_file<Client>(this.MainWindow.Klijenti, MainWindow.pathKlijenata);
+                        break;
+                    }
+                }
+            }*/
         }
 
         private void KlientMainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
