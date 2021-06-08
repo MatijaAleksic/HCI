@@ -22,6 +22,13 @@ namespace HCI_T5._4
     public partial class AdminMainWindow : Window
     {
         private MainWindow MainWindow { get; set; }
+
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "test";
+            HelpProvider.ShowHelp(str);
+        }
+
         public ObservableCollection<CelebrationRequest> Zahtevi { get; set; }
 
         public AdminMainWindow()
@@ -84,5 +91,9 @@ namespace HCI_T5._4
 
             dgrMain.ItemsSource = searched;
         }
+
+        
+
+
     }
 }

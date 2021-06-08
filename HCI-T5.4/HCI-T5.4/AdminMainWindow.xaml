@@ -16,6 +16,9 @@
         <CommandBinding Command="local:RoutedCommands.TabelaKlijenata" Executed="Klijent_Click"></CommandBinding>
         <CommandBinding Command="local:RoutedCommands.TabelaSaradnika" Executed="Saradnici_Click"></CommandBinding>
         <CommandBinding Command="local:RoutedCommands.Logout" Executed="Logout_Click"></CommandBinding>
+
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpBinding_Executed"></CommandBinding>
+
     </Window.CommandBindings>
 
 

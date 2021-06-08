@@ -31,6 +31,14 @@ namespace HCI_T5._4
     public partial class MainWindow : Window
     {
 
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "test";
+            HelpProvider.ShowHelp(str);
+        }
+
+
+
         public ObservableCollection<Admin> Administratori { get; set; }
         public ObservableCollection<Organiser> Organizatori { get; set; }
         public ObservableCollection<Client> Klijenti { get; set; }
@@ -93,12 +101,5 @@ namespace HCI_T5._4
         }
 
         
-
-        private void Logout_Click(object sender, RoutedEventArgs e)
-        {
-            this.Hide();
-            var login = new HCI_T5._4.Login(this);
-            login.Show();
-        }
     }
 }
