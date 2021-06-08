@@ -59,6 +59,7 @@
                   SelectionMode="Single" SelectionUnit="FullRow"
                   CanUserReorderColumns="True" CanUserResizeColumns="True" IsReadOnly="True" CanUserSortColumns="True" Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="3" Margin="10,10,10,10" AutoGenerateColumns="False">
                 <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Id}" Header="Id" />
                     <DataGridTextColumn Binding="{Binding VrstaProslave}" Header="VrstaProslave" />
                     <DataGridTextColumn Binding="{Binding Budzet}" Header="Budzet" />
                     <DataGridTextColumn Binding="{Binding Datum}" Header="Datum" />

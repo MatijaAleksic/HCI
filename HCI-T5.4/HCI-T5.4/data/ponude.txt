@@ -1,29 +1,8 @@
 [
 
 {
-  "Zahtev": {
-    "VrstaProslave": "Vrsta2",
-    "Budzet": 150,
-    "Datum": "2021-06-08T14:24:12.2916581+02:00",
-    "Grad": "Grad2",
-    "Proizvodi": "sampanjac i sve-pare",
-    "Status": 1,
-    "BrojPonuda": 0,
-    "Klijent": {
-      "Ime": "David",
-      "Prezime": "Davidovic",
-      "Email": "david@gmail.com",
-      "Username": "david",
-      "Password": "davidovic"
-    },
-    "Organizator": {
-      "Ime": "Savo",
-      "Prezime": "Savic",
-      "Email": "savo@gmail.com",
-      "Username": "savo",
-      "Password": "savic"
-    }
-  },
+  "ZahtevIdx" : 2,
+
   "Saradnik": {
     "Ime": "Vrsta1",
     "Adresa": "Adresa1",

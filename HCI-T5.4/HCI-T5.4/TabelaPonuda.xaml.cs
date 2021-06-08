@@ -38,16 +38,15 @@ namespace HCI_T5._4
             this.DataContext = this;
             this.MainWindow = window;
 
+            Ponude = new ObservableCollection<CelebrationOffer>();
 
-            foreach(CelebrationOffer cel in this.MainWindow.Ponude)
+            foreach (CelebrationOffer cel in this.MainWindow.Ponude)
             {
-                if(this.MainWindow.loggedUsername == cel.Zahtev.Klijent.Username)
+                if (celeb.Id == cel.ZahtevIdx)
                 {
                     Ponude.Add(cel);
                 }
             }
-
-
         }
 
         private void SearchZahtev_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)

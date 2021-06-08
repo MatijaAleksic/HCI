@@ -37,26 +37,17 @@ namespace HCI_T5._4
 
             this.DataContext = this;
             this.MainWindow = window;
-            
-            Zahtevi = this.MainWindow.Zahtevi;
 
-            /*Client c = new Client("asdf", "asdf", "asdf", "asdf", "asdf");
 
-            EnterpriseType type = new EnterpriseType("Tip1");
+            Zahtevi = new ObservableCollection<CelebrationRequest>();
 
-            Product p1 = new Product("prdukt1", 100);
-            Product p2 = new Product("prdukt2", 200);
-            Product p3 = new Product("prdukt3", 300);
-
-            List<Product> productList = new List<Product> { p1, p2, p3 };
-
-            Associate aso = new Associate("asdf", type, "adresa", "grad", productList);
-
-            CelebrationRequest a = new CelebrationRequest("asd", 100, DateTime.Now, "asdf", "asdf", CelebrationRequestStatus.Cekanje, 0, c, aso);
-
-            this.MainWindow.Zahtevi.Add(a);
-
-            this.MainWindow.util.write_to_file<CelebrationRequest>(this.MainWindow.Zahtevi, this.MainWindow.pathZahtevi);*/
+            foreach (CelebrationRequest cel in this.MainWindow.Zahtevi)
+            {
+                if (this.MainWindow.loggedUsername == cel.Klijent.Username)
+                {
+                    Zahtevi.Add(cel);
+                }
+            }
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)

@@ -42,7 +42,8 @@ namespace HCI_T5._4
 
         private void Dodaj_Click(object sender, RoutedEventArgs e)
         {
-            CelebrationRequest temp = new CelebrationRequest(VrstaProslave.Text, Int32.Parse(Budzet.Text), Datum.DisplayDate, Grad.Text, Proizvodi.Text, CelebrationRequestStatus.Cekanje, 0, new Client("a", "a", "a", "a", "a"), (Organiser) Organizator.SelectedItem);
+            ++this.MainWindow.zahtev_idx;
+            CelebrationRequest temp = new CelebrationRequest(this.MainWindow.zahtev_idx,VrstaProslave.Text, Int32.Parse(Budzet.Text), Datum.DisplayDate, Grad.Text, Proizvodi.Text, CelebrationRequestStatus.Cekanje, 0, new Client("a", "a", "a", "a", "a"), (Organiser) Organizator.SelectedItem);
 
             this.MainWindow.Zahtevi.Add(temp);
 

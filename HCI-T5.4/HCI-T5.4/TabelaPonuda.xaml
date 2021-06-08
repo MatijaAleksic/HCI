@@ -46,13 +46,12 @@
                   SelectionMode="Single" SelectionUnit="FullRow"
                   CanUserReorderColumns="True" CanUserResizeColumns="True" IsReadOnly="True" CanUserSortColumns="True" Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="3" Margin="10,10,10,10" AutoGenerateColumns="False">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Binding="{Binding Zahtev.VrstaProslave}" Header="VrstaProslave" />
-                    <DataGridTextColumn Binding="{Binding Zahtev.Datum}" Header="Datum" />
-
                     <DataGridTextColumn Binding="{Binding Saradnik.Ime}" Header="Saradnik" />
                     <DataGridTextColumn Binding="{Binding Saradnik.Adresa}" Header="Saradnik Adresa" />
                     <DataGridTextColumn Binding="{Binding Saradnik.Grad}" Header="Saradnik Grad" />
                     <DataGridTextColumn Binding="{Binding Saradnik.Type.Ime}" Header="Tip preduzeca" />
+                    <DataGridTextColumn Binding="{Binding Status}" Header="Status" />
+                    
                 </DataGrid.Columns>
             </DataGrid>
 

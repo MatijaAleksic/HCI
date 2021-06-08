@@ -27,24 +27,24 @@ namespace HCI_T5._4.modeli
 			}
 		}
 
-		private CelebrationRequest _zahtev;
+		private int _zahtev_idx;
 		private Associate _saradnik;
 		private CelebrationOfferStatus _status;
 		private List<Product> _proizvodi;
 
 
-		public CelebrationRequest Zahtev
+		public int ZahtevIdx
 		{
 			get
 			{
-				return _zahtev;
+				return _zahtev_idx;
 			}
 			set
 			{
-				if (value != _zahtev)
+				if (value != _zahtev_idx)
 				{
-					_zahtev = value;
-					OnPropertyChanged("Zahtev");
+					_zahtev_idx = value;
+					OnPropertyChanged("ZahtevIdx");
 				}
 			}
 		}
@@ -97,10 +97,10 @@ namespace HCI_T5._4.modeli
 			}
 		}
 
-		public CelebrationOffer(CelebrationRequest _zahtev,Associate _saradnik,	CelebrationOfferStatus _status,
+		public CelebrationOffer(int _zahtev_idx, Associate _saradnik,	CelebrationOfferStatus _status,
 			List<Product> _proizvodi)
 		{
-			this._zahtev = _zahtev;
+			this._zahtev_idx = _zahtev_idx;
 			this._saradnik = _saradnik;
 			this._status = _status;
 			this._proizvodi = _proizvodi;

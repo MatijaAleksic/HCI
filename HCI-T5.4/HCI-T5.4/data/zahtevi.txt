@@ -1,6 +1,7 @@
 [
 
 {
+  "Id" : 1,
   "VrstaProslave": "Vrsta1",
   "Budzet": 100,
   "Datum": "2021-06-08T14:24:12.2916581+02:00",
@@ -26,6 +27,7 @@
 ,
 
 {
+  "Id" : 2,
   "VrstaProslave": "Vrsta2",
   "Budzet": 150,
   "Datum": "2021-06-08T14:24:12.2916581+02:00",
@@ -51,6 +53,7 @@
 ,
 
 {
+  "Id" : 3,
   "VrstaProslave": "asdf",
   "Budzet": 1010,
   "Datum": "2021-06-08T14:24:12.2916581+02:00",
@@ -76,6 +79,7 @@
 ,
 
 {
+  "Id" : 4,
   "VrstaProslave": "asdf",
   "Budzet": 908909,
   "Datum": "2021-06-08T00:00:00+02:00",
@@ -84,11 +88,11 @@
   "Status": 1,
   "BrojPonuda": 0,
   "Klijent": {
-    "Ime": "a",
-    "Prezime": "a",
-    "Email": "a",
-    "Username": "a",
-    "Password": "a"
+    "Ime": "David",
+    "Prezime": "Davidovic",
+    "Email": "david@gmail.com",
+    "Username": "david",
+    "Password": "davidovic"
   },
   "Organizator": {
     "Ime": "Savo",
@@ -96,56 +100,6 @@
     "Email": "savo@gmail.com",
     "Username": "savo",
     "Password": "savic"
-  }
-}
-,
-
-{
-  "VrstaProslave": "asdf",
-  "Budzet": 123123,
-  "Datum": "2021-06-08T00:00:00+02:00",
-  "Grad": "asdf",
-  "Proizvodi": "asdf",
-  "Status": 1,
-  "BrojPonuda": 0,
-  "Klijent": {
-    "Ime": "a",
-    "Prezime": "a",
-    "Email": "a",
-    "Username": "a",
-    "Password": "a"
-  },
-  "Organizator": {
-    "Ime": "pera",
-    "Prezime": "peric",
-    "Email": "peric@sdad.com",
-    "Username": "perica",
-    "Password": "perica"
-  }
-}
-,
-
-{
-  "VrstaProslave": "y",
-  "Budzet": 123,
-  "Datum": "2021-06-08T00:00:00+02:00",
-  "Grad": "y",
-  "Proizvodi": "y",
-  "Status": 1,
-  "BrojPonuda": 0,
-  "Klijent": {
-    "Ime": "a",
-    "Prezime": "a",
-    "Email": "a",
-    "Username": "a",
-    "Password": "a"
-  },
-  "Organizator": {
-    "Ime": "pera",
-    "Prezime": "peric",
-    "Email": "peric@sdad.com",
-    "Username": "perica",
-    "Password": "perica"
   }
 }
 ,

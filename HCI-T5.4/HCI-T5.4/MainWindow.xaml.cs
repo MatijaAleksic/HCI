@@ -49,6 +49,7 @@ namespace HCI_T5._4
         readonly public string pathPonude = @"..\..\..\data\ponude.txt";
 
         public String loggedUsername;
+        public int zahtev_idx = 0;
 
 
         public Util util = new Util();
@@ -56,7 +57,7 @@ namespace HCI_T5._4
 
         public MainWindow()
         {
-            //this.Hide();
+            this.Hide();
 
             Administratori = util.read_file<Admin>(pathAdministratora);
             Organizatori = util.read_file<Organiser>(pathOrganizatora);
@@ -66,7 +67,9 @@ namespace HCI_T5._4
             Zahtevi = util.read_file<CelebrationRequest>(pathZahtevi);
             Saradnici = util.read_file<Associate>(pathSaradnici);
 
-            Ponude = new ObservableCollection<CelebrationOffer>();
+            Ponude = util.read_file<CelebrationOffer>(pathPonude);
+
+            zahtev_idx = Zahtevi.Count;
 
             //var clientHome = new HCI_T5._4.KlientMainWindow(this);
             //clientHome.Show();

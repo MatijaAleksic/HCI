@@ -23,6 +23,7 @@ namespace HCI_T5._4.modeli
 			}
 		}
 
+		private int _id;
 		private string _vrstaProslave;
 		private int _budzet;
 		private DateTime _datum;
@@ -34,6 +35,23 @@ namespace HCI_T5._4.modeli
 
 		private Client _klijent;
 		private Organiser _organizator;
+
+
+		public int Id
+		{
+			get
+			{
+				return _id;
+			}
+			set
+			{
+				if (value != _id)
+				{
+					_id = value;
+					OnPropertyChanged("Id");
+				}
+			}
+		}
 
 		public string VrstaProslave
 		{
@@ -179,9 +197,10 @@ namespace HCI_T5._4.modeli
 			}
 		}
 
-		public CelebrationRequest(string _vrstaProslave, int _budzet, DateTime _datum, string _grad, string _prizvodi,
+		public CelebrationRequest(int _id, string _vrstaProslave, int _budzet, DateTime _datum, string _grad, string _prizvodi,
 			CelebrationRequestStatus _status,int _brojPonuda, Client _klijent, Organiser _organizator)
 		{
+			this._id = _id;
 			this._vrstaProslave = _vrstaProslave;
 			this._budzet = _budzet;
 			this._datum = _datum;
