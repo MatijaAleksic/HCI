@@ -72,23 +72,6 @@ namespace HCI_T5._4
                 var ponude = new HCI_T5._4.TabelaPonuda(this.MainWindow, selectedClient);
                 ponude.Show();
             }
-
-            /*Client selectedClient = (Client)dgrMain.SelectedItem;
-
-            if (selectedClient != null)
-            {
-                foreach (Client cli in this.MainWindow.Klijenti)
-                {
-                    if (selectedClient.Username == cli.Username && selectedClient.Email == cli.Email)
-                    {
-                        this.MainWindow.Klijenti.Remove(cli);
-                        Klijenti.Remove(cli);
-
-                        this.util.write_to_file<Client>(this.MainWindow.Klijenti, MainWindow.pathKlijenata);
-                        break;
-                    }
-                }
-            }*/
         }
 
         private void KlientMainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -103,6 +86,20 @@ namespace HCI_T5._4
 
             dgrMain.ItemsSource = searched;
         }
+
+        private void Refresh_Click(object sender, RoutedEventArgs e)
+        {
+            Zahtevi.Clear();
+
+            foreach (CelebrationRequest cel in this.MainWindow.Zahtevi)
+            {
+                if (this.MainWindow.loggedUsername == cel.Klijent.Username)
+                {
+                    Zahtevi.Add(cel);
+                }
+            }
+        }
+
 
     }
 }

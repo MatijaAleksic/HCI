@@ -88,7 +88,8 @@
             </Grid>
 
             <Button Content="Nparavi novi zahtev" Grid.Column="5" Grid.Row="4" Width="150" Height="40" Click="NapraviZahtev_Click" />
-            <Button Content="Pregledaj ponude" Grid.Column="3" Grid.Row="4" Width="150" Height="40" Click="PregledajPonude_Click"  />
+            <Button Content="Pregledaj ponude" Grid.Column="3" Grid.Row="4" Width="150" Height="40" Click="PregledajPonude_Click" Grid.ColumnSpan="3"  />
+            <Button Content="Refresh" Grid.Column="3" Grid.Row="4" Width="150" Height="40" Click="Refresh_Click"   />
 
         </Grid>
     </DockPanel>

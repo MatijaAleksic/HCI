@@ -110,6 +110,7 @@ namespace HCI_T5._4.modeli
 			}
 		}
 
+		public Client(){  }
 
 		public Client(string ime, string prezime, string email, string username, string password)
 		{

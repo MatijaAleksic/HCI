@@ -1,7 +1,7 @@
 [
 
 {
-  "Id" : 1,
+  "Id": 1,
   "VrstaProslave": "Vrsta1",
   "Budzet": 100,
   "Datum": "2021-06-08T14:24:12.2916581+02:00",
@@ -27,14 +27,14 @@
 ,
 
 {
-  "Id" : 2,
+  "Id": 2,
   "VrstaProslave": "Vrsta2",
   "Budzet": 150,
   "Datum": "2021-06-08T14:24:12.2916581+02:00",
   "Grad": "Grad2",
   "Proizvodi": "sampanjac i sve-pare",
   "Status": 1,
-  "BrojPonuda": 0,
+  "BrojPonuda": 1,
   "Klijent": {
     "Ime": "David",
     "Prezime": "Davidovic",
@@ -53,7 +53,7 @@
 ,
 
 {
-  "Id" : 3,
+  "Id": 3,
   "VrstaProslave": "asdf",
   "Budzet": 1010,
   "Datum": "2021-06-08T14:24:12.2916581+02:00",
@@ -79,7 +79,7 @@
 ,
 
 {
-  "Id" : 4,
+  "Id": 4,
   "VrstaProslave": "asdf",
   "Budzet": 908909,
   "Datum": "2021-06-08T00:00:00+02:00",
@@ -100,6 +100,32 @@
     "Email": "savo@gmail.com",
     "Username": "savo",
     "Password": "savic"
+  }
+}
+,
+
+{
+  "Id": 5,
+  "VrstaProslave": "1",
+  "Budzet": 1,
+  "Datum": "2021-06-08T00:00:00+02:00",
+  "Grad": "1",
+  "Proizvodi": "1",
+  "Status": 1,
+  "BrojPonuda": 0,
+  "Klijent": {
+    "Ime": "David",
+    "Prezime": "Davidovic",
+    "Email": "david@gmail.com",
+    "Username": "david",
+    "Password": "davidovic"
+  },
+  "Organizator": {
+    "Ime": "pera",
+    "Prezime": "peric",
+    "Email": "peric@sdad.com",
+    "Username": "perica",
+    "Password": "perica"
   }
 }
 ,

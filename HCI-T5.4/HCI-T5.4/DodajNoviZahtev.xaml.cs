@@ -43,7 +43,13 @@ namespace HCI_T5._4
         private void Dodaj_Click(object sender, RoutedEventArgs e)
         {
             ++this.MainWindow.zahtev_idx;
-            CelebrationRequest temp = new CelebrationRequest(this.MainWindow.zahtev_idx,VrstaProslave.Text, Int32.Parse(Budzet.Text), Datum.DisplayDate, Grad.Text, Proizvodi.Text, CelebrationRequestStatus.Cekanje, 0, new Client("a", "a", "a", "a", "a"), (Organiser) Organizator.SelectedItem);
+            Client tempClient = new Client();
+            foreach(Client c in this.MainWindow.Klijenti)
+            {
+                if (this.MainWindow.loggedUsername == c.Username)
+                    tempClient = c;
+            }
+            CelebrationRequest temp = new CelebrationRequest(this.MainWindow.zahtev_idx,VrstaProslave.Text, Int32.Parse(Budzet.Text), Datum.DisplayDate, Grad.Text, Proizvodi.Text, CelebrationRequestStatus.Cekanje, 0, tempClient, (Organiser) Organizator.SelectedItem);
 
             this.MainWindow.Zahtevi.Add(temp);
 
