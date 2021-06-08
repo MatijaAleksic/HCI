@@ -3,15 +3,15 @@
     "Ime": "Poslasticarnica"
   },
   {
-    "Ime": "Restoran"
+    "Ime": "Restorani"
   },
   {
-    "Ime": "Igraliste"
+    "Ime": "Cvecara"
   },
   {
-    "Ime": "Obdaniste"
+    "Ime": "Ketering"
   },
   {
-    "Ime": "Hotel"
+    "Ime": "Baloni"
   }
 ]

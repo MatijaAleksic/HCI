@@ -73,5 +73,11 @@ namespace HCI_T5._4
 
             dgrMain.ItemsSource = searched;
         }
+
+        private void DodajKlijenta_Click(object sender, RoutedEventArgs e)
+        {
+            RegistracijaOrganizatora ro = new RegistracijaOrganizatora(this.MainWindow);
+            ro.Show();
+        }
     }
 }

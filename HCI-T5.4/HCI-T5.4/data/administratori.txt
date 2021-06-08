@@ -18,4 +18,13 @@
 }
 ,
 
+{
+  "Ime": "uros",
+  "Prezime": "nenadic",
+  "Email": "ukica@dasd.com",
+  "Username": "ukica",
+  "Password": "ukica"
+}
+,
+
 ]
