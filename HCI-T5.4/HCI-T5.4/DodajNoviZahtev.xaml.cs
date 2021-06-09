@@ -26,6 +26,8 @@ namespace HCI_T5._4
 
         public ObservableCollection<Organiser> Organizatori { get; set; }
 
+        public ObservableCollection<Gost> Gosti { get; set; }
+
         public DodajNoviZahtev()
         {
             InitializeComponent();
@@ -38,6 +40,7 @@ namespace HCI_T5._4
             this.MainWindow = window;
 
             Organizatori = this.MainWindow.Organizatori;
+            Gosti = new ObservableCollection<Gost>();
         }
 
         private void Dodaj_Click(object sender, RoutedEventArgs e)
@@ -49,7 +52,7 @@ namespace HCI_T5._4
                 if (this.MainWindow.loggedUsername == c.Username)
                     tempClient = c;
             }
-            CelebrationRequest temp = new CelebrationRequest(this.MainWindow.zahtev_idx,VrstaProslave.Text, Int32.Parse(Budzet.Text), Datum.DisplayDate, Grad.Text, Proizvodi.Text, CelebrationRequestStatus.Cekanje, 0, tempClient, (Organiser) Organizator.SelectedItem);
+            CelebrationRequest temp = new CelebrationRequest(this.MainWindow.zahtev_idx,VrstaProslave.Text, Int32.Parse(Budzet.Text), Datum.DisplayDate, Grad.Text, Proizvodi.Text, CelebrationRequestStatus.Cekanje, 0, tempClient, (Organiser) Organizator.SelectedItem, this.Gosti.ToList());
 
             this.MainWindow.Zahtevi.Add(temp);
 
@@ -59,8 +62,13 @@ namespace HCI_T5._4
             this.Close();
         }
 
+        private void Gosti_Click(object sender, RoutedEventArgs e)
+        {
+            var gosti = new HCI_T5._4.TabelaGostiju(this);
+            gosti.Show();
+        }
 
-        private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
+            private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
         {
             Regex regex = new Regex("[^0-9]+");
             e.Handled = regex.IsMatch(e.Text);

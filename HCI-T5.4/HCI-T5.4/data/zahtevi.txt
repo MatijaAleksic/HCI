@@ -22,7 +22,18 @@
     "Email": "savo@gmail.com",
     "Username": "savo",
     "Password": "savic"
-  }
+  },
+  "Gosti": [
+    {
+      "Ime": "Marko"
+    },
+    {
+      "Ime": "Milan"
+    },
+    {
+      "Ime": "Dusan"
+    }
+  ]
 }
 ,
 
@@ -48,7 +59,18 @@
     "Email": "savo@gmail.com",
     "Username": "savo",
     "Password": "savic"
-  }
+  },
+  "Gosti": [
+    {
+      "Ime": "Marko"
+    },
+    {
+      "Ime": "Milan"
+    },
+    {
+      "Ime": "Dusan"
+    }
+  ]
 }
 ,
 
@@ -74,7 +96,18 @@
     "Email": "savo@gmail.com",
     "Username": "savo",
     "Password": "savic"
-  }
+  },
+  "Gosti": [
+    {
+      "Ime": "Marko"
+    },
+    {
+      "Ime": "Milan"
+    },
+    {
+      "Ime": "Dusan"
+    }
+  ]
 }
 ,
 
@@ -100,7 +133,18 @@
     "Email": "savo@gmail.com",
     "Username": "savo",
     "Password": "savic"
-  }
+  },
+  "Gosti": [
+    {
+      "Ime": "Marko"
+    },
+    {
+      "Ime": "Milan"
+    },
+    {
+      "Ime": "Dusan"
+    }
+  ]
 }
 ,
 
@@ -126,7 +170,52 @@
     "Email": "peric@sdad.com",
     "Username": "perica",
     "Password": "perica"
-  }
+  },
+  "Gosti": [
+    {
+      "Ime": "Marko"
+    },
+    {
+      "Ime": "Milan"
+    },
+    {
+      "Ime": "Dusan"
+    }
+  ]
+}
+,
+
+{
+  "Id": 6,
+  "VrstaProslave": "1",
+  "Budzet": 1,
+  "Datum": "2021-06-09T00:00:00+02:00",
+  "Grad": "1",
+  "Proizvodi": "1",
+  "Status": 1,
+  "BrojPonuda": 0,
+  "Klijent": {
+    "Ime": "David",
+    "Prezime": "Davidovic",
+    "Email": "david@gmail.com",
+    "Username": "david",
+    "Password": "davidovic"
+  },
+  "Organizator": {
+    "Ime": "pera",
+    "Prezime": "peric",
+    "Email": "peric@sdad.com",
+    "Username": "perica",
+    "Password": "perica"
+  },
+  "Gosti": [
+    {
+      "Ime": "matija"
+    },
+    {
+      "Ime": "pera"
+    }
+  ]
 }
 ,
 
