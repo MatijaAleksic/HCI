@@ -35,7 +35,7 @@ namespace HCI_T5._4
            typeof(RoutedCommand),
            new InputGestureCollection()
            {
-                new KeyGesture(Key.A,ModifierKeys.Control)
+                new KeyGesture(Key.O,ModifierKeys.Control)
            }
            );
 
@@ -45,7 +45,7 @@ namespace HCI_T5._4
            typeof(RoutedCommand),
            new InputGestureCollection()
            {
-                new KeyGesture(Key.C,ModifierKeys.Control)
+                new KeyGesture(Key.K,ModifierKeys.Control)
            }
            );
 
@@ -55,7 +55,7 @@ namespace HCI_T5._4
            typeof(RoutedCommand),
            new InputGestureCollection()
            {
-                new KeyGesture(Key.C,ModifierKeys.Control)
+                new KeyGesture(Key.N,ModifierKeys.Control)
            }
            );
 
@@ -65,7 +65,7 @@ namespace HCI_T5._4
            typeof(RoutedCommand),
            new InputGestureCollection()
            {
-                new KeyGesture(Key.G,ModifierKeys.Control)
+                new KeyGesture(Key.M,ModifierKeys.Control)
            }
            );
 
@@ -76,7 +76,7 @@ namespace HCI_T5._4
            typeof(RoutedCommand),
            new InputGestureCollection()
            {
-                new KeyGesture(Key.B,ModifierKeys.Control)
+                new KeyGesture(Key.Q,ModifierKeys.Control)
            }
            );
 

@@ -46,20 +46,29 @@ namespace HCI_T5._4
         {
             Client selectedClient = (Client)dgrMain.SelectedItem;
 
-            if (selectedClient != null)
-            {
-                foreach (Client cli in this.MainWindow.Klijenti)
-                {
-                    if (selectedClient.Username == cli.Username && selectedClient.Email == cli.Email)
-                    {
-                        this.MainWindow.Klijenti.Remove(cli);
-                        Klijenti.Remove(cli);
 
-                        this.util.write_to_file<Client>(this.MainWindow.Klijenti, MainWindow.pathKlijenata);
-                        break;
+            if (MessageBox.Show("Da li ste sigurni da zelite da obriste klijenta?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+            {
+                Close();
+            }
+            else
+            {
+                if (selectedClient != null)
+                {
+                    foreach (Client cli in this.MainWindow.Klijenti)
+                    {
+                        if (selectedClient.Username == cli.Username && selectedClient.Email == cli.Email)
+                        {
+                            this.MainWindow.Klijenti.Remove(cli);
+                            Klijenti.Remove(cli);
+
+                            this.util.write_to_file<Client>(this.MainWindow.Klijenti, MainWindow.pathKlijenata);
+                            break;
+                        }
                     }
                 }
             }
+           
         }
 
         private void SearchOrganizator_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)

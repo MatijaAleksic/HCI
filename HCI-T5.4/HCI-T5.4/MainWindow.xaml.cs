@@ -48,6 +48,7 @@ namespace HCI_T5._4
         public ObservableCollection<Associate> Saradnici { get; set; }
         public ObservableCollection<CelebrationOffer> Ponude { get; set; }
 
+
         readonly public string pathAdministratora = @"..\..\..\data\administratori.txt";
         readonly public string pathOrganizatora = @"..\..\..\data\organizatori.txt";
         readonly public string pathKlijenata = @"..\..\..\data\klijenti.txt";
@@ -76,6 +77,7 @@ namespace HCI_T5._4
             Saradnici = util.read_file<Associate>(pathSaradnici);
 
             Ponude = util.read_file<CelebrationOffer>(pathPonude);
+
 
             zahtev_idx = Zahtevi.Count;
 

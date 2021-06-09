@@ -18,4 +18,94 @@
 }
 ,
 
+{
+  "Ime": "Mira",
+  "Prezime": "Miric",
+  "Email": "mira@dasda.com",
+  "Username": "mira",
+  "Password": "mira"
+}
+,
+
+{
+  "Ime": "Jova",
+  "Prezime": "Jovic",
+  "Email": "jovica@dasd.com",
+  "Username": "jovica",
+  "Password": "jovica"
+}
+,
+
+{
+  "Ime": "Ljubica",
+  "Prezime": "Rokvic",
+  "Email": "ljubica@rdasdda.com",
+  "Username": "ljubica",
+  "Password": "ljubica"
+}
+,
+
+{
+  "Ime": "Sonja",
+  "Prezime": "Sonjicevic",
+  "Email": "sonja@dasda.com",
+  "Username": "sonja",
+  "Password": "sonja"
+}
+,
+
+{
+  "Ime": "Tihomir",
+  "Prezime": "Tomic",
+  "Email": "tika@gada.com",
+  "Username": "tika",
+  "Password": "tika"
+}
+,
+
+{
+  "Ime": "ivan",
+  "Prezime": "grubor",
+  "Email": "grubori@gasd.com",
+  "Username": "grubor",
+  "Password": "grubor"
+}
+,
+
+{
+  "Ime": "milos",
+  "Prezime": "basic",
+  "Email": "basic@gads.com",
+  "Username": "basic",
+  "Password": "basic"
+}
+,
+
+{
+  "Ime": "djordje",
+  "Prezime": "urakalo",
+  "Email": "urukalo@gasda.com",
+  "Username": "djole",
+  "Password": "djole"
+}
+,
+
+{
+  "Ime": "Milan",
+  "Prezime": "Svonja",
+  "Email": "veteran@gadas.com",
+  "Username": "svonja",
+  "Password": "svonja"
+}
+,
+
+{
+  "Ime": "Tara",
+  "Prezime": "Stajic",
+  "Email": "tara@gaddas.com",
+  "Username": "tara",
+  "Password": "tara"
+}
+,
+
 ]

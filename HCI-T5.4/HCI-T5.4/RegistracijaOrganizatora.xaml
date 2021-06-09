@@ -37,7 +37,7 @@
             <TextBox Margin="5,5,5,5" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="3" x:Name="Username" Height="30" Width="150"  FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.501,0.433"/>
 
             <Label  Margin="5,5,5,5" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="4" Content="Lozinka:"/>
-            <PasswordBox  Margin="5,5,5,5" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="4" x:Name="Password"  Height="30" Width="180"  FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+            <PasswordBox  Margin="5,5,5,5" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="4" x:Name="Password"  Height="30" Width="150"  FontFamily="Champagne &amp; Limousines" FontSize="18"/>
 
             <Button Width="100" Height="40"  Grid.Column="1" Grid.Row="5" Margin="29,29,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"  Content="Registruj"  Click="MenuItem_Click" RenderTransformOrigin="0.525,2.889"/>
         </Grid>

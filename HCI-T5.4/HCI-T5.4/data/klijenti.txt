@@ -37,11 +37,65 @@
 ,
 
 {
-  "Ime": "matija",
-  "Prezime": "aleksic",
-  "Email": "dasdada",
-  "Username": "matija1",
-  "Password": "matija1"
+  "Ime": "Jana",
+  "Prezime": "Tarabic",
+  "Email": "jana@gasd.com",
+  "Username": "jana",
+  "Password": "jana"
+}
+,
+
+{
+  "Ime": "Zlatko",
+  "Prezime": "Blaskovic",
+  "Email": "zlaja@gasdas.com",
+  "Username": "zlaja",
+  "Password": "zlaja"
+}
+,
+
+{
+  "Ime": "Aleksa",
+  "Prezime": "Djokic",
+  "Email": "djokac@gasd.com",
+  "Username": "djokac",
+  "Password": "djokac"
+}
+,
+
+{
+  "Ime": "Aleksa",
+  "Prezime": "Djokovic",
+  "Email": "biceps@gasdgas.com",
+  "Username": "biceps",
+  "Password": "biceps"
+}
+,
+
+{
+  "Ime": "Mitar",
+  "Prezime": "Kresic",
+  "Email": "tarmi@gasa.com",
+  "Username": "tarmi",
+  "Password": "tarmi"
+}
+,
+
+{
+  "Ime": "Srdjan",
+  "Prezime": "Davidovic",
+  "Email": "srki@gasdas.com",
+  "Username": "srki",
+  "Password": "srki"
+}
+,
+
+{
+  "Ime": "Jelena",
+  "Prezime": "Tomasev",
+  "Email": "postena@dafas.com",
+  "Username": "jec",
+  "Password": "jec"
 }
 ,
 

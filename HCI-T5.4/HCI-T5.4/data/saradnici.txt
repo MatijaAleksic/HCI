@@ -50,4 +50,112 @@
 }
 ,
 
+{
+  "Ime": "Kum",
+  "Adresa": "Carice Milice 23",
+  "Grad": "Futog",
+  "Type": {
+    "Ime": "Restorani"
+  },
+  "Slicica": null,
+  "Proizvodi": null
+}
+,
+
+{
+  "Ime": "Baloons",
+  "Adresa": "spens",
+  "Grad": "Novi Sad",
+  "Type": {
+    "Ime": "Baloni"
+  },
+  "Slicica": null,
+  "Proizvodi": null
+}
+,
+
+{
+  "Ime": "Stari Krovovi",
+  "Adresa": "Novosadski Put",
+  "Grad": "Veternik",
+  "Type": {
+    "Ime": "Restorani"
+  },
+  "Slicica": null,
+  "Proizvodi": null
+}
+,
+
+{
+  "Ime": "Savin",
+  "Adresa": "Sime Solaje",
+  "Grad": "Futog",
+  "Type": {
+    "Ime": "Poslasticarnica"
+  },
+  "Slicica": null,
+  "Proizvodi": null
+}
+,
+
+{
+  "Ime": "Hladisa i Pecko",
+  "Adresa": "Hadzi Ruvimova 33",
+  "Grad": "Novi Sad",
+  "Type": {
+    "Ime": "Poslasticarnica"
+  },
+  "Slicica": null,
+  "Proizvodi": null
+}
+,
+
+{
+  "Ime": "Pofezne",
+  "Adresa": "Vardarska 49",
+  "Grad": "Novi Sad",
+  "Type": {
+    "Ime": "Ketering"
+  },
+  "Slicica": null,
+  "Proizvodi": null
+}
+,
+
+{
+  "Ime": "Moja Mala Kuhinja",
+  "Adresa": "Carice Milice 87",
+  "Grad": "Futog",
+  "Type": {
+    "Ime": "Ketering"
+  },
+  "Slicica": null,
+  "Proizvodi": null
+}
+,
+
+{
+  "Ime": "Vila Moskva",
+  "Adresa": "Novosadski put 132",
+  "Grad": "Novi Sad",
+  "Type": {
+    "Ime": "Restorani"
+  },
+  "Slicica": null,
+  "Proizvodi": null
+}
+,
+
+{
+  "Ime": "Baloncici",
+  "Adresa": "Nova 23",
+  "Grad": "Novi Sad",
+  "Type": {
+    "Ime": "Baloni"
+  },
+  "Slicica": null,
+  "Proizvodi": null
+}
+,
+
 ]
