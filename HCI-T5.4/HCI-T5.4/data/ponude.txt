@@ -1,8 +1,7 @@
 [
 
 {
-  "ZahtevIdx" : 2,
-
+  "ZahtevIdx": 2,
   "Saradnik": {
     "Ime": "Vrsta1",
     "Adresa": "Adresa1",
@@ -39,6 +38,135 @@
     {
       "Ime": "prdukt3",
       "Cena": 300
+    }
+  ]
+}
+,
+
+{
+  "ZahtevIdx": 1,
+  "Saradnik": {
+    "Ime": "Riza",
+    "Adresa": "Cara Lazara 111",
+    "Grad": "Futog",
+    "Type": {
+      "Ime": "Poslasticarnica"
+    },
+    "Slicica": null,
+    "Proizvodi": [
+      {
+        "Ime": "prdukt1",
+        "Cena": 100
+      },
+      {
+        "Ime": "prdukt2",
+        "Cena": 200
+      },
+      {
+        "Ime": "prdukt3",
+        "Cena": 300
+      }
+    ]
+  },
+  "Status": 0,
+  "Proizvodi": [
+    {
+      "Ime": "prdukt1",
+      "Cena": 100
+    },
+    {
+      "Ime": "prdukt1",
+      "Cena": 100
+    },
+    {
+      "Ime": "prdukt2",
+      "Cena": 200
+    },
+    {
+      "Ime": "prdukt2",
+      "Cena": 200
+    }
+  ]
+}
+,
+
+{
+  "ZahtevIdx": 2,
+  "Saradnik": {
+    "Ime": "Riza",
+    "Adresa": "Cara Lazara 111",
+    "Grad": "Futog",
+    "Type": {
+      "Ime": "Poslasticarnica"
+    },
+    "Slicica": null,
+    "Proizvodi": [
+      {
+        "Ime": "prdukt1",
+        "Cena": 100
+      },
+      {
+        "Ime": "prdukt2",
+        "Cena": 200
+      },
+      {
+        "Ime": "prdukt3",
+        "Cena": 300
+      }
+    ]
+  },
+  "Status": 0,
+  "Proizvodi": [
+    {
+      "Ime": "prdukt1",
+      "Cena": 100
+    },
+    {
+      "Ime": "prdukt1",
+      "Cena": 100
+    },
+    {
+      "Ime": "prdukt1",
+      "Cena": 100
+    }
+  ]
+}
+,
+
+{
+  "ZahtevIdx": 1,
+  "Saradnik": {
+    "Ime": "Riza",
+    "Adresa": "Cara Lazara 111",
+    "Grad": "Futog",
+    "Type": {
+      "Ime": "Poslasticarnica"
+    },
+    "Slicica": null,
+    "Proizvodi": [
+      {
+        "Ime": "prdukt1",
+        "Cena": 100
+      },
+      {
+        "Ime": "prdukt2",
+        "Cena": 200
+      },
+      {
+        "Ime": "prdukt3",
+        "Cena": 300
+      }
+    ]
+  },
+  "Status": 0,
+  "Proizvodi": [
+    {
+      "Ime": "prdukt2",
+      "Cena": 200
+    },
+    {
+      "Ime": "prdukt2",
+      "Cena": 200
     }
   ]
 }

@@ -89,7 +89,7 @@
 
             </Grid>
 
-            <Button Content="Pregledaj ponude" Grid.Column="5" Grid.Row="4" Width="150" Height="40" Margin="66,53,67,53"  />
+            <Button Content="Napravi Ponudu" Grid.Column="5" Grid.Row="4" Width="150" Height="40" Click="NapraviPonudu_Click"  />
 
         </Grid>
 

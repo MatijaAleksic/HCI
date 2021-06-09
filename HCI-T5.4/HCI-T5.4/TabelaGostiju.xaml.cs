@@ -44,8 +44,20 @@ namespace HCI_T5._4
         {
             if (textBox1.Text != "")
             {
-                Gost noviGost = new Gost(textBox1.Text);
-                this.DodajNoviZahtev.Gosti.Add(noviGost);
+                Boolean ima = false;
+
+                foreach (Gost g in this.DodajNoviZahtev.Gosti.ToList())
+                {
+                    if (textBox1.Text == g.Ime)
+                    {
+                        ima = true;
+                    }
+                }
+                if (!ima)
+                {
+                    Gost noviGost = new Gost(textBox1.Text);
+                    this.DodajNoviZahtev.Gosti.Add(noviGost);
+                }
             }
         }
 
