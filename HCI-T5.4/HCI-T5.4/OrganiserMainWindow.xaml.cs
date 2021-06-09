@@ -23,6 +23,9 @@ namespace HCI_T5._4
     {
         private MainWindow MainWindow { get; set; }
         public ObservableCollection<Associate> Saradnici { get; set; }
+
+        public ObservableCollection<CelebrationRequest> Zahtevi { get; set; }
+
         public OrganiserMainWindow()
         {
             InitializeComponent();
@@ -35,6 +38,16 @@ namespace HCI_T5._4
             this.MainWindow = window;
 
             Saradnici = this.MainWindow.Saradnici;
+
+            Zahtevi = new ObservableCollection<CelebrationRequest>();
+
+            foreach (CelebrationRequest cel in this.MainWindow.Zahtevi)
+            {
+                if (this.MainWindow.loggedUsername == cel.Organizator.Username)
+                {
+                    Zahtevi.Add(cel);
+                }
+            }
         }
 
         private void Saradnici_Click(object sender, RoutedEventArgs e)
@@ -49,6 +62,17 @@ namespace HCI_T5._4
             login.Show();
             this.Close();
         }
+
+        private void NapraviPonudu_Click(object sender, RoutedEventArgs e)
+        {
+            CelebrationRequest selectedZahtev = (CelebrationRequest)dgrMain.SelectedItem;
+            if (selectedZahtev != null)
+            {
+                var napraviPonudu = new HCI_T5._4.NapraviPonudu(this.MainWindow, selectedZahtev);
+                napraviPonudu.Show();
+            }
+        }
+            
 
         private void SearchZahtev_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
         {

@@ -3,7 +3,7 @@
 {
   "Id": 1,
   "VrstaProslave": "Vrsta1",
-  "Budzet": 100,
+  "Budzet": 1000,
   "Datum": "2021-06-08T14:24:12.2916581+02:00",
   "Grad": "Grad1",
   "Proizvodi": "torta neka nek bude, alkohol i trebe",
@@ -40,7 +40,7 @@
 {
   "Id": 2,
   "VrstaProslave": "Vrsta2",
-  "Budzet": 150,
+  "Budzet": 1500,
   "Datum": "2021-06-08T14:24:12.2916581+02:00",
   "Grad": "Grad2",
   "Proizvodi": "sampanjac i sve-pare",
@@ -151,7 +151,7 @@
 {
   "Id": 5,
   "VrstaProslave": "1",
-  "Budzet": 1,
+  "Budzet": 10000,
   "Datum": "2021-06-08T00:00:00+02:00",
   "Grad": "1",
   "Proizvodi": "1",
@@ -188,7 +188,7 @@
 {
   "Id": 6,
   "VrstaProslave": "1",
-  "Budzet": 1,
+  "Budzet": 1000,
   "Datum": "2021-06-09T00:00:00+02:00",
   "Grad": "1",
   "Proizvodi": "1",
@@ -214,6 +214,40 @@
     },
     {
       "Ime": "pera"
+    }
+  ]
+}
+,
+
+{
+  "Id": 7,
+  "VrstaProslave": "1",
+  "Budzet": 10000,
+  "Datum": "2021-06-09T00:00:00+02:00",
+  "Grad": "1",
+  "Proizvodi": "1",
+  "Status": 1,
+  "BrojPonuda": 0,
+  "Klijent": {
+    "Ime": "David",
+    "Prezime": "Davidovic",
+    "Email": "david@gmail.com",
+    "Username": "david",
+    "Password": "davidovic"
+  },
+  "Organizator": {
+    "Ime": "pera",
+    "Prezime": "peric",
+    "Email": "peric@sdad.com",
+    "Username": "perica",
+    "Password": "perica"
+  },
+  "Gosti": [
+    {
+      "Ime": "a"
+    },
+    {
+      "Ime": "asdf"
     }
   ]
 }
