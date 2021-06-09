@@ -75,7 +75,7 @@
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
-            <Label Grid.Column="4" Grid.Row="2">Search:</Label>
+            <Label Grid.Column="4" Grid.Row="2">Pretraga:</Label>
             <TextBox x:Name="SearchZahtev" Grid.Column="5" Grid.Row="2" Margin="5,5,5,5" VerticalAlignment="Center" KeyUp="SearchZahtev_KeyUp" />
 
             <DataGrid x:Name="dgrMain" ItemsSource="{Binding Path=Zahtevi}"
