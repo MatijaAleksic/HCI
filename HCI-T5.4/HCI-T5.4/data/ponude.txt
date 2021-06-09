@@ -245,4 +245,12 @@
 }
 ,
 
+{
+  "ZahtevIdx": 1,
+  "Saradnik": null,
+  "Status": 0,
+  "Proizvodi": []
+}
+,
+
 ]

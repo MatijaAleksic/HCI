@@ -20,24 +20,14 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <ListView Name ="listaArhitekti" Grid.Row="0" ItemsSource="{Binding Gosti}" SelectedItem="{Binding Path=SelectedResource}" >
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <WrapPanel>
-                            <TextBlock Text="{Binding Name}"/>
-                            <TextBlock Text=" "/>
-                            <TextBlock Text="{Binding Surname}"/>
-                            <TextBlock Text=" "/>
-                            <TextBlock Text="{Binding MestoRodjenja}"/>
-                        </WrapPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
+            <ListView Name ="listaGosti" Grid.Row="0" ItemsSource="{Binding Gosti}" SelectedItem="{Binding Path=SelectedResource}"  MouseMove="ListView_MouseMove" PreviewMouseLeftButtonDown="ListView_PreviewMouseLeftButtonDown" >
+                
             </ListView>
+
         </Grid>
-        <Canvas Name="Map" local:HelpProvider.HelpKey="mainWindow"  Grid.Column="1" Grid.Row="1"  AllowDrop="True" DragEnter="MyImage_DragEnter" >
-            <Canvas.Background>
-                <ImageBrush/>
-            </Canvas.Background>
+
+        <Canvas Name="Map" local:HelpProvider.HelpKey="mainWindow"  Grid.Column="1" Grid.Row="1"  AllowDrop="True" DragEnter="MyImage_DragEnter" MouseMove="MyImage_MouseMove" Drop="MyImage_Drop">
+            <Image Margin="10,10,10,10" local:HelpProvider.HelpKey="mapa" Name="ImageViewer1" HorizontalAlignment="Left" VerticalAlignment="Top" MouseWheel="UIElement_OnMouseWheel" AllowDrop="True" DragEnter="MyImage_DragEnter" Drop="MyImage_Drop" PreviewMouseLeftButtonDown="MyImage_PreviewMouseLeftButtonDown" MouseMove="MyImage_MouseMove" MouseUp="MyImage_MouseUp" />
         </Canvas>
     </Grid>
 </Window>
