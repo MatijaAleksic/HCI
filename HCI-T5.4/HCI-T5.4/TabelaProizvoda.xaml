@@ -59,6 +59,6 @@
 
         </Grid>
 
-        <Button x:Name="ObrisiProizvod" Grid.Column="5" Grid.Row="4" Width="100" Height="40" Content="Obrisi proizvod" Margin="173,10,10,114"/>
+        <Button x:Name="ObrisiProizvod" Grid.Column="5" Grid.Row="4" Width="100" Height="40" Content="Obrisi proizvod"/>
     </Grid>
 </Window>

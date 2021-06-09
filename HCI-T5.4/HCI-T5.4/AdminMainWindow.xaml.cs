@@ -23,6 +23,8 @@ namespace HCI_T5._4
     {
         private MainWindow MainWindow { get; set; }
         public ObservableCollection<Organiser> Organizatori { get; set; }
+
+        public ObservableCollection<String> Statusi2 { get; set; }
         private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             string str = "test";
@@ -41,9 +43,13 @@ namespace HCI_T5._4
             InitializeComponent();
             this.DataContext = this;
             this.MainWindow = window;
-
+            Statusi2 = new ObservableCollection<string>();
             Zahtevi = this.MainWindow.Zahtevi;
             Organizatori = this.MainWindow.Organizatori;
+
+            Statusi2.Add("Podnesen");
+            Statusi2.Add("Cekanje");
+            Statusi2.Add("Zavrsen");
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)
@@ -94,10 +100,12 @@ namespace HCI_T5._4
         }
 
 
-        private void FilterZahtevi_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var searched = Zahtevi.Where(elem => elem.Organizator.Ime.Equals(FilterZahtevi.SelectedItem.ToString()));
+      
 
+        private void Status_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            String st = (String)Status.SelectedItem;
+            var searched = Zahtevi.Where(elem => elem.Status.ToString().Equals(st));
             dgrMain.ItemsSource = searched;
         }
     }

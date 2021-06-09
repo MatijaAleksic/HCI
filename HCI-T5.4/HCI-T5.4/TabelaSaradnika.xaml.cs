@@ -92,5 +92,13 @@ namespace HCI_T5._4
 
 
         }
+
+
+        private void DodajProizvod_Click_1(object sender, RoutedEventArgs e)
+        {
+            Associate selectedAssociate = (Associate)dgrMain.SelectedItem;
+            var k = new HCI_T5._4.DodajProizvod(this.MainWindow, selectedAssociate);
+            k.Show();
+        }
     }
 }

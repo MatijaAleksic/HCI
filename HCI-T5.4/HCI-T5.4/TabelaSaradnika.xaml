@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HCI_T5._4"
         mc:Ignorable="d"
-        Title="TabelaSaradnika" Height="450" Width="800">
+        Title="TabelaSaradnika" Height="450" Width="850">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -51,7 +51,6 @@
             </DataGrid.Columns>
             <DataGrid.RowDetailsTemplate>
                 <DataTemplate>
-                    <Image Height="30" Source="{Binding Slicica}"/>
                 </DataTemplate>
             </DataGrid.RowDetailsTemplate>
         </DataGrid>
@@ -78,8 +77,20 @@
             <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Path=Adresa}" Margin="2"></TextBox>
             <TextBox Grid.Column="1" Grid.Row="3" Text="{Binding Path=Grad}" Margin="2"></TextBox>
         </Grid>
+        <Grid Grid.Column="5" Grid.Row="4" HorizontalAlignment="Center" Margin="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Button Margin="3" x:Name="DodajProizvod" Content="Dodaj proizvod" Grid.Column="0" Grid.Row="0" Width="120" Height="40" HorizontalAlignment="Center" Click="DodajProizvod_Click_1"/>
+            <Button Margin="3" x:Name="ObrisiSaradnika" Content="Obrisi saradnika" Grid.Column="0" Grid.Row="2" Width="120" Height="40" HorizontalAlignment="Center" Click="ObrisiSaradnika_Click"  />
+            <Button Margin="3" x:Name="DodajSaradnika" Content="Dodaj saradnika" Grid.Column="0" Grid.Row="1" Width="120" Height="40" HorizontalAlignment="Center"  Click="DodajSaradnika_Click" />
+        </Grid>
+             
 
-        <Button x:Name="ObrisiSaradnika" Content="Obrisi saradnika" Grid.Column="5" Grid.Row="4" Width="120" Height="40"  HorizontalAlignment="Right" Click="ObrisiSaradnika_Click" />
-        <Button x:Name="DodajSaradnika" Content="Dodaj saradnika" Grid.Column="5" Grid.Row="4" Width="120" Height="40" HorizontalAlignment="Left" RenderTransformOrigin="0.471,1.128" Click="DodajSaradnika_Click" />
     </Grid>
 </Window>
