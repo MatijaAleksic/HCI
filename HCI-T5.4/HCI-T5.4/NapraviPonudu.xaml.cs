@@ -93,5 +93,10 @@ namespace HCI_T5._4
             string str = "napraviPonudu";
             HelpProvider.ShowHelp(str);
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
