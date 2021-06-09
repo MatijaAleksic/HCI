@@ -100,5 +100,11 @@ namespace HCI_T5._4
             var k = new HCI_T5._4.DodajProizvod(this.MainWindow, selectedAssociate);
             k.Show();
         }
+
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "TabelaSaradnika";
+            HelpProvider.ShowHelp(str);
+        }
     }
 }

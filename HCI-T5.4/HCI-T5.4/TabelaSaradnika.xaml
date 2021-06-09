@@ -6,6 +6,10 @@
         xmlns:local="clr-namespace:HCI_T5._4"
         mc:Ignorable="d"
         Title="TabelaSaradnika" Height="450" Width="850">
+
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpBinding_Executed"></CommandBinding>
+    </Window.CommandBindings>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -81,14 +85,13 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
+                
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-            <Button Margin="3" x:Name="DodajProizvod" Content="Dodaj proizvod" Grid.Column="0" Grid.Row="0" Width="120" Height="40" HorizontalAlignment="Center" Click="DodajProizvod_Click_1"/>
-            <Button Margin="3" x:Name="ObrisiSaradnika" Content="Obrisi saradnika" Grid.Column="0" Grid.Row="2" Width="120" Height="40" HorizontalAlignment="Center" Click="ObrisiSaradnika_Click"  />
-            <Button Margin="3" x:Name="DodajSaradnika" Content="Dodaj saradnika" Grid.Column="0" Grid.Row="1" Width="120" Height="40" HorizontalAlignment="Center"  Click="DodajSaradnika_Click" />
+            <Button Margin="3" x:Name="ObrisiSaradnika" Content="Obrisi saradnika" Grid.Column="0" Grid.Row="1" Width="120" Height="40" HorizontalAlignment="Center" Click="ObrisiSaradnika_Click"  />
+            <Button Margin="3" x:Name="DodajSaradnika" Content="Dodaj saradnika" Grid.Column="0" Grid.Row="0" Width="120" Height="40" HorizontalAlignment="Center"  Click="DodajSaradnika_Click" />
         </Grid>
              
 

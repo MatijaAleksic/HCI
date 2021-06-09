@@ -86,5 +86,11 @@ namespace HCI_T5._4
             RegistracijaOrganizatora ro = new RegistracijaOrganizatora(this.MainWindow);
             ro.Show();
         }
+
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "TabelaOrganizatora";
+            HelpProvider.ShowHelp(str);
+        }
     }
 }
