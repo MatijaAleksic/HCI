@@ -49,9 +49,9 @@ namespace HCI_T5._4
                 }
             }
 
-            Statusi.Add(CelebrationRequestStatus.Podnesen);
+            /*Statusi.Add(CelebrationRequestStatus.Podnesen);
             Statusi.Add(CelebrationRequestStatus.Cekanje);
-            Statusi.Add(CelebrationRequestStatus.Zavrsen);
+            Statusi.Add(CelebrationRequestStatus.Zavrsen);*/
 
         }
 
@@ -67,6 +67,17 @@ namespace HCI_T5._4
             CelebrationRequestStatus st = (CelebrationRequestStatus) Status.SelectedItem;
             var searched = Ponude.Where(elem => elem.Status.ToString().Equals(st.ToString()));
             dgrMain.ItemsSource = searched;
+        }
+
+        private void PogledajDetalje_Click(object sender, RoutedEventArgs e)
+        {
+            CelebrationOffer selectedOffer = (CelebrationOffer)dgrMain.SelectedItem;
+
+            if (selectedOffer != null)
+            {
+                var detalji = new HCI_T5._4.DetaljiPonude(this.MainWindow, selectedOffer);
+                detalji.Show();
+            }
         }
     }
 }

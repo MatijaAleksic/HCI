@@ -80,8 +80,7 @@
 
             </Grid>
 
-            <Button Content="Prihvati" Grid.Column="5" Grid.Row="4" Width="150" Height="40"  />
-            <Button Content="Odbiji" Grid.Column="3" Grid.Row="4" Width="150" Height="40"  />
+            <Button Content="Pogledaj Detalje" Grid.Column="5" Grid.Row="4" Width="150" Height="40" Click="PogledajDetalje_Click"  />
 
         </Grid>
     </DockPanel>
