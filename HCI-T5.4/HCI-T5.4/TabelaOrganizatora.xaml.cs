@@ -51,17 +51,24 @@ namespace HCI_T5._4
         {
             Organiser selectedOrganiser = (Organiser)dgrMain.SelectedItem;
 
-            if (selectedOrganiser != null )
+            if (MessageBox.Show("Da li ste sigurni da zelite da obrisete organizatora?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
             {
-                foreach(Organiser org in this.MainWindow.Organizatori)
+                Close();
+            }
+            else
+            {
+                if (selectedOrganiser != null)
                 {
-                    if(selectedOrganiser.Username == org.Username && selectedOrganiser.Email == org.Email)
+                    foreach (Organiser org in this.MainWindow.Organizatori)
                     {
-                        this.MainWindow.Organizatori.Remove(org);
-                        Organizatori.Remove(org);
+                        if (selectedOrganiser.Username == org.Username && selectedOrganiser.Email == org.Email)
+                        {
+                            this.MainWindow.Organizatori.Remove(org);
+                            Organizatori.Remove(org);
 
-                        this.util.write_to_file<Organiser>(this.MainWindow.Organizatori, MainWindow.pathOrganizatora);
-                        break;
+                            this.util.write_to_file<Organiser>(this.MainWindow.Organizatori, MainWindow.pathOrganizatora);
+                            break;
+                        }
                     }
                 }
             }

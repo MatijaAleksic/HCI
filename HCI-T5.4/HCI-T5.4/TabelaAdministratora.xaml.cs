@@ -46,17 +46,24 @@ namespace HCI_T5._4
         {
             Admin selectedAdmin = (Admin)dgrMain.SelectedItem;
 
-            if (selectedAdmin != null)
+            if (MessageBox.Show("Da li ste sigurni da zelite da obrisete administratora?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
             {
-                foreach (Admin adm in this.MainWindow.Administratori)
+                Close();
+            }
+            else
+            {
+                if (selectedAdmin != null)
                 {
-                    if (selectedAdmin.Username == adm.Username && selectedAdmin.Email == adm.Email)
+                    foreach (Admin adm in this.MainWindow.Administratori)
                     {
-                        this.MainWindow.Administratori.Remove(adm);
-                        Administratori.Remove(adm);
+                        if (selectedAdmin.Username == adm.Username && selectedAdmin.Email == adm.Email)
+                        {
+                            this.MainWindow.Administratori.Remove(adm);
+                            Administratori.Remove(adm);
 
-                        this.util.write_to_file<Admin>(this.MainWindow.Administratori, MainWindow.pathAdministratora);
-                        break;
+                            this.util.write_to_file<Admin>(this.MainWindow.Administratori, MainWindow.pathAdministratora);
+                            break;
+                        }
                     }
                 }
             }
