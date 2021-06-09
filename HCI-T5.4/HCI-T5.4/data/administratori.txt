@@ -10,15 +10,6 @@
 ,
 
 {
-  "Ime": "Marko",
-  "Prezime": "Markovic",
-  "Email": "admin1@gmail.com",
-  "Username": "admin1",
-  "Password": "admin1"
-}
-,
-
-{
   "Ime": "uros",
   "Prezime": "nenadic",
   "Email": "ukica@dasd.com",

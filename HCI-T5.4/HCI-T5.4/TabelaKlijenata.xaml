@@ -46,7 +46,7 @@
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Column="1" Grid.Row="0" Margin="80,5">Azuriranje organizatora:</Label>
+            <Label Grid.Column="1" Grid.Row="0" Margin="80,5">Azuriranje klijenta:</Label>
             <TextBlock Grid.Column="0" Grid.Row="1">Ime:</TextBlock>
             <TextBlock Grid.Column="0" Grid.Row="2">Prezime:</TextBlock>
             <TextBlock Grid.Column="0" Grid.Row="3">Email:</TextBlock>

@@ -47,7 +47,7 @@ namespace HCI_T5._4
             Client selectedClient = (Client)dgrMain.SelectedItem;
 
 
-            if (MessageBox.Show("Da li ste sigurni da zelite da obriste klijenta?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+            if (MessageBox.Show("Da li ste sigurni da zelite da obrisete klijenta?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
             {
                 Close();
             }

@@ -48,17 +48,24 @@ namespace HCI_T5._4
         {
             Associate selectedAssociate = (Associate)dgrMain.SelectedItem;
 
-            if (selectedAssociate != null)
+            if (MessageBox.Show("Da li ste sigurni da zelite da obrisete saradnika?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
             {
-                foreach (Associate asc in this.MainWindow.Saradnici)
+                Close();
+            }
+            else
+            {
+                if (selectedAssociate != null)
                 {
-                    if (selectedAssociate.Ime == asc.Ime && selectedAssociate.Adresa == asc.Adresa)
+                    foreach (Associate asc in this.MainWindow.Saradnici)
                     {
-                        this.MainWindow.Saradnici.Remove(asc);
-                        Saradnici.Remove(asc);
+                        if (selectedAssociate.Ime == asc.Ime && selectedAssociate.Adresa == asc.Adresa)
+                        {
+                            this.MainWindow.Saradnici.Remove(asc);
+                            Saradnici.Remove(asc);
 
-                        this.util.write_to_file<Associate>(this.MainWindow.Saradnici, MainWindow.pathSaradnici);
-                        break;
+                            this.util.write_to_file<Associate>(this.MainWindow.Saradnici, MainWindow.pathSaradnici);
+                            break;
+                        }
                     }
                 }
             }
