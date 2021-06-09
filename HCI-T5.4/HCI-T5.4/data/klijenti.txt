@@ -37,15 +37,6 @@
 ,
 
 {
-  "Ime": "matija",
-  "Prezime": "aleksic",
-  "Email": "dasdada",
-  "Username": "matija1",
-  "Password": "matija1"
-}
-,
-
-{
   "Ime": "Jana",
   "Prezime": "Tarabic",
   "Email": "jana@gasd.com",
