@@ -6,6 +6,13 @@
         xmlns:local="clr-namespace:HCI_T5._4"
         mc:Ignorable="d"
         Title="TabelaPonuda" Height="450" Width="800">
+    <Window.CommandBindings>
+
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpBinding_Executed"></CommandBinding>
+
+    </Window.CommandBindings>
+    
+    
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <Menu.ItemsPanel>
@@ -72,8 +79,24 @@
 
             </Grid>
 
-            <Button Content="Prihvati" Grid.Column="5" Grid.Row="4" Width="150" Height="40"  />
-            <Button Content="Odbiji" Grid.Column="3" Grid.Row="4" Width="150" Height="40"  />
+            <Button Content="Prihvati" Grid.Column="5" Grid.Row="4" Width="150" Height="40"  >
+                <Button.ToolTip>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="5" TextWrapping="Wrap" MaxWidth="100">
+                            Prihvatam ponudu.
+                        </TextBlock>
+                    </StackPanel>
+                </Button.ToolTip>
+            </Button>
+            <Button Content="Odbiji" Grid.Column="3" Grid.Row="4" Width="150" Height="40"  >
+                <Button.ToolTip>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="5" TextWrapping="Wrap" MaxWidth="100">
+                            Odbijam formu.
+                        </TextBlock>
+                    </StackPanel>
+                </Button.ToolTip>
+            </Button>
 
         </Grid>
     </DockPanel>

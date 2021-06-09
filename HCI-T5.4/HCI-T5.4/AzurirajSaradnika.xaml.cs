@@ -19,6 +19,13 @@ namespace HCI_T5._4
     /// </summary>
     public partial class AzurirajSaradnika : Window
     {
+
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "azurirajSaradnika";
+            HelpProvider.ShowHelp(str);
+        }
+
         public AzurirajSaradnika()
         {
             InitializeComponent();

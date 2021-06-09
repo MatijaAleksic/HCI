@@ -6,6 +6,12 @@
         xmlns:local="clr-namespace:HCI_T5._4"
         mc:Ignorable="d"
         Title="AzurirajSaradnika" Height="300" Width="450">
+    <Window.CommandBindings>
+
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpBinding_Executed"></CommandBinding>
+
+    </Window.CommandBindings>
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>

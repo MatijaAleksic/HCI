@@ -6,6 +6,13 @@
         xmlns:local="clr-namespace:HCI_T5._4"
         mc:Ignorable="d"
         Title="UpravljajProizvodima" Height="550" Width="700">
+
+    <Window.CommandBindings>
+
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpBinding_Executed"></CommandBinding>
+
+    </Window.CommandBindings>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>

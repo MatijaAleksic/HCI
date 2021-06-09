@@ -86,5 +86,12 @@ namespace HCI_T5._4
             MessageBox.Show("Uspjesno dodavanje nove ponude!");
             this.Close();
         }
+
+
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "napraviPonudu";
+            HelpProvider.ShowHelp(str);
+        }
     }
 }

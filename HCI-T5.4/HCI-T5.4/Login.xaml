@@ -10,6 +10,7 @@
         Closing="Login_Closing">
 
     <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpBinding_Executed"></CommandBinding>
         <CommandBinding Command="local:RoutedCommands.Login" Executed="MenuItem_Click"></CommandBinding>
         <CommandBinding Command="local:RoutedCommands.Register" Executed="MenuItem_Click1"></CommandBinding>
     </Window.CommandBindings>

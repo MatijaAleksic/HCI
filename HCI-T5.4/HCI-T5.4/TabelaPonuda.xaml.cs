@@ -55,5 +55,12 @@ namespace HCI_T5._4
 
             dgrMain.ItemsSource = searched;
         }
+
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "tabelaPonuda";
+            HelpProvider.ShowHelp(str);
+        }
+
     }
 }

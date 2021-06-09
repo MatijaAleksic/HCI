@@ -6,6 +6,11 @@
         xmlns:local="clr-namespace:HCI_T5._4"
         mc:Ignorable="d"
         Title="DodajNoviZahtev" Height="450" Width="358">
+    <Window.CommandBindings>
+
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpBinding_Executed"></CommandBinding>
+
+    </Window.CommandBindings>
     <Grid>
         <Label Content="Dodaj novi zahtev" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Gray" FontSize="18"/>
 

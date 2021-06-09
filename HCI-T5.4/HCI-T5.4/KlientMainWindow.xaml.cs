@@ -101,5 +101,11 @@ namespace HCI_T5._4
         }
 
 
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "klijentMainWindow";
+            HelpProvider.ShowHelp(str);
+        }
+
     }
 }

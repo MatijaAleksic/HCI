@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="DodajProizvod" Height="300
         " Width="450">
+    <Window.CommandBindings>
+
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpBinding_Executed"></CommandBinding>
+
+    </Window.CommandBindings>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>

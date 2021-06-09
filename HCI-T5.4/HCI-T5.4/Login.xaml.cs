@@ -111,5 +111,11 @@ namespace HCI_T5._4
         {
             this.MainWindow.Close();
         }
+
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "login";
+            HelpProvider.ShowHelp(str);
+        }
     }
 }
