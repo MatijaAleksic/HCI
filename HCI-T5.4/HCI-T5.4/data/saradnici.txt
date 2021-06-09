@@ -8,7 +8,20 @@
     "Ime": "Poslasticarnica"
   },
   "Slicica": null,
-  "Proizvodi": null
+  "Proizvodi": [
+    {
+      "Ime": "prdukt1",
+      "Cena": 100
+    },
+    {
+      "Ime": "prdukt2",
+      "Cena": 200
+    },
+    {
+      "Ime": "prdukt3",
+      "Cena": 300
+    }
+    ]
 }
 ,
 
@@ -20,7 +33,20 @@
     "Ime": "Cvecara"
   },
   "Slicica": null,
-  "Proizvodi": null
+  "Proizvodi": [
+    {
+      "Ime": "prdukt1",
+      "Cena": 100
+    },
+    {
+      "Ime": "prdukt2",
+      "Cena": 200
+    },
+    {
+      "Ime": "prdukt3",
+      "Cena": 300
+    }
+    ]
 }
 ,
 

@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel;
 using System;
+using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace HCI_T5._4.modeli
 {
@@ -35,6 +37,8 @@ namespace HCI_T5._4.modeli
 
 		private Client _klijent;
 		private Organiser _organizator;
+
+		private List<Gost> _gosti;
 
 
 		public int Id
@@ -197,6 +201,22 @@ namespace HCI_T5._4.modeli
 			}
 		}
 
+		public List<Gost> Gosti
+		{
+			get
+			{
+				return _gosti;
+			}
+			set
+			{
+				if (value != _gosti)
+				{
+					_gosti = value;
+					OnPropertyChanged("Gosti");
+				}
+			}
+		}
+
 		public CelebrationRequest(int _id, string _vrstaProslave, int _budzet, DateTime _datum, string _grad, string _prizvodi,
 			CelebrationRequestStatus _status,int _brojPonuda, Client _klijent, Organiser _organizator)
 		{
@@ -210,6 +230,23 @@ namespace HCI_T5._4.modeli
 			this._brojPonuda = _brojPonuda;
 			this._klijent = _klijent;
 			this._organizator = _organizator;
+		}
+
+		[JsonConstructor]
+		public CelebrationRequest(int _id, string _vrstaProslave, int _budzet, DateTime _datum, string _grad, string _prizvodi,
+			CelebrationRequestStatus _status, int _brojPonuda, Client _klijent, Organiser _organizator, List<Gost> _gosti)
+		{
+			this._id = _id;
+			this._vrstaProslave = _vrstaProslave;
+			this._budzet = _budzet;
+			this._datum = _datum;
+			this._grad = _grad;
+			this._prizvodi = _prizvodi;
+			this._status = _status;
+			this._brojPonuda = _brojPonuda;
+			this._klijent = _klijent;
+			this._organizator = _organizator;
+			this._gosti = _gosti;
 		}
 
 	}

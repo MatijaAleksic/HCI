@@ -49,5 +49,12 @@ namespace HCI_T5._4
             login.Show();
             this.Close();
         }
+
+        private void SearchZahtev_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            var searched = Saradnici.Where(elem => elem.Ime.ToLower().StartsWith(SearchZahtev.Text.ToLower()));
+
+            dgrMain.ItemsSource = searched;
+        }
     }
 }
