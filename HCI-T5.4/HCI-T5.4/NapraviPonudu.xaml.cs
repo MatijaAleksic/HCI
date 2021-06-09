@@ -87,6 +87,11 @@ namespace HCI_T5._4
             this.Close();
         }
 
-       
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Associate a = (Associate)Saradnik.SelectedItem;
+            RasporedSedenja rs = new RasporedSedenja(this.MainWindow, Zahtev, a);
+            rs.Show();
+        }
     }
 }

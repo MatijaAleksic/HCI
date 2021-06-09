@@ -1,13 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using System;
 using System.ComponentModel;
+using System.Windows.Media.Imaging;
 
 using Newtonsoft.Json;
 
 namespace HCI_T5._4.modeli
 {
-    public class Gost
+    public class Slika : INotifyPropertyChanged
     {
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected void OnPropertyChanged(string name)
@@ -18,31 +25,26 @@ namespace HCI_T5._4.modeli
             }
         }
 
-        private string _ime;
+        private WriteableBitmap _slicica;
 
-        private Dictionary<string, int> xPoint;
-        private Dictionary<string, int> yPoint;
-
-        public Dictionary<string, int> XPoint { get => xPoint; set => xPoint = value; }
-        public Dictionary<string, int> YPoint { get => yPoint; set => yPoint = value; }
-
-        public string Ime
+        public WriteableBitmap Slicica
         {
             get
             {
-                return _ime;
+                return _slicica;
             }
             set
             {
-                _ime = value;
-                OnPropertyChanged("Ime");
+                _slicica = value;
+                OnPropertyChanged("Slicica");
             }
         }
 
         [JsonConstructor]
-        public Gost(String _ime)
+        public Slika(WriteableBitmap _slicica)
         {
-            this._ime = _ime;
+            this._slicica = _slicica;
         }
     }
 }
+
