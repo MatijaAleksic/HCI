@@ -9,7 +9,6 @@ namespace HCI_T5._4.modeli
 {
 	public enum CelebrationOfferStatus
 	{
-		Cekanje,
 		Ponudjen,
 		Prihvacen,
 		Odbijen

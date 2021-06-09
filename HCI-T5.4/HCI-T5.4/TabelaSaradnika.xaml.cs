@@ -83,5 +83,14 @@ namespace HCI_T5._4
 
             dgrMain.ItemsSource = searched;
         }
+
+        private void Tip_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            EnterpriseType et =(EnterpriseType)Tip.SelectedItem;
+            var searched = Saradnici.Where(elem => elem.Type.Ime.Equals(et.Ime));
+            dgrMain.ItemsSource = searched;
+
+
+        }
     }
 }
