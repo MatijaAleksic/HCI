@@ -22,7 +22,7 @@ namespace HCI_T5._4
     public partial class AdminMainWindow : Window
     {
         private MainWindow MainWindow { get; set; }
-
+        public ObservableCollection<Organiser> Organizatori { get; set; }
         private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             string str = "test";
@@ -43,6 +43,7 @@ namespace HCI_T5._4
             this.MainWindow = window;
 
             Zahtevi = this.MainWindow.Zahtevi;
+            Organizatori = this.MainWindow.Organizatori;
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)
@@ -87,13 +88,17 @@ namespace HCI_T5._4
 
         private void SearchZahtev_KeyUp(object sender, KeyEventArgs e)
         {
-            var searched = Zahtevi.Where(elem => elem.Grad.ToLower().StartsWith(SearchZahtev.Text.ToLower()));
+            var searched = Zahtevi.Where(elem => elem.Grad.ToLower().StartsWith(SearchZahtev.Text.ToLower()) && elem.VrstaProslave.ToLower().StartsWith(SearchZahtev.Text.ToLower()));
 
             dgrMain.ItemsSource = searched;
         }
 
-        
 
+        private void FilterZahtevi_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var searched = Zahtevi.Where(elem => elem.Organizator.Ime.Equals(FilterZahtevi.SelectedItem.ToString()));
 
+            dgrMain.ItemsSource = searched;
+        }
     }
 }

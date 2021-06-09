@@ -27,7 +27,7 @@
 
         <Label Grid.Column="2" Grid.Row="2">Filter:</Label>
         <ListBox x:Name="Filter" Grid.Column="3" Grid.Row="2" Margin="5,5,5,5" HorizontalAlignment="Left" Width="366" />
-        <Label Grid.Column="4" Grid.Row="2">Search:</Label>
+        <Label Grid.Column="4" Grid.Row="2">Pretraga:</Label>
         <TextBox x:Name="SearchOrganizator" Grid.Column="5" Grid.Row="2" Margin="5,5,5,5" VerticalAlignment="Center" KeyUp="SearchOrganizator_KeyUp" />
 
         <DataGrid x:Name="dgrMain" ItemsSource="{Binding Path=Saradnici}"
@@ -41,6 +41,11 @@
                 <DataGridTextColumn Binding="{Binding Type.Ime}" Header="Tip saradnika" />
 
             </DataGrid.Columns>
+            <DataGrid.RowDetailsTemplate>
+                <DataTemplate>
+                    <Image Height="30" Source="{Binding Slicica}"/>
+                </DataTemplate>
+            </DataGrid.RowDetailsTemplate>
         </DataGrid>
         <Grid Grid.Column="3" Grid.Row="4" Margin="5,5,5,5" DataContext="{Binding ElementName=dgrMain,Path=SelectedItem}">
             <Grid.RowDefinitions>

@@ -42,7 +42,7 @@
         <Grid VerticalAlignment="Bottom" Margin="35,80" Height="240">
             <Label Content="LOGIN" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="365,10,0,0" Foreground="Gray" FontSize="18"/>
 
-            <Grid VerticalAlignment="Center" Margin="230,0,232,0" Height="96" Width="300">
+            <Grid VerticalAlignment="Center" Margin="230,0,230,0" Height="96" Width="300">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
@@ -53,13 +53,13 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <Label HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" Content="Username:"/>
-                <TextBox HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="0" x:Name="Username" Height="30" Width="180"  FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.501,0.433"/>
-                    <Label  HorizontalAlignment="Left" Grid.Column="0" Grid.Row="1" Content="Password:"/>
-                <PasswordBox  HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" x:Name="Password" Margin="0,10"  Height="30" Width="180"  FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+                <Label VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="0" Content="Korisnicko ime:"/>
+                <TextBox VerticalAlignment="Center" HorizontalAlignment="Left"  Grid.Column="1" Grid.Row="0" x:Name="Username" Height="30" Width="165"  FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.501,0.433"/>
+                <Label VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0" Grid.Row="1" Content="Lozinka:"/>
+                <PasswordBox VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" x:Name="Password" Margin="0,10"  Height="30" Width="165"  FontFamily="Champagne &amp; Limousines" FontSize="18"/>
             </Grid>
-            <Button Width="75" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-110,189,0,0" Content="LOGIN"  Command="local:RoutedCommands.Login" ToolTip="Login dugme da bi se ulogovali u sistem" RenderTransformOrigin="0.525,2.889"/>
-            <Button Width="75" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="190,189,0,0" Content="REGISTER"  Command="local:RoutedCommands.Register" ToolTip="Register dugme za registraciju novih klijenata" RenderTransformOrigin="0.525,2.889"/>
+            <Button Width="90" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="-110,189,0,0" Content="ULOGUJ SE"  Command="local:RoutedCommands.Login" ToolTip="Login dugme da bi se ulogovali u sistem" RenderTransformOrigin="0.525,2.889"/>
+            <Button Width="90" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="190,189,0,0" Content="REGISTRACIJA"  Command="local:RoutedCommands.Register" ToolTip="Register dugme za registraciju novih klijenata" RenderTransformOrigin="0.525,2.889"/>
 
         </Grid>
     </Grid>
