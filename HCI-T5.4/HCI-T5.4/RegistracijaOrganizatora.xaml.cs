@@ -60,5 +60,10 @@ namespace HCI_T5._4
                 this.Close();
             }
         }
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "DodavanjeOrganizatora";
+            HelpProvider.ShowHelp(str);
+        }
     }
 }

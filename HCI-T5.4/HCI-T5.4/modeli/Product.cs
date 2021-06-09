@@ -23,6 +23,7 @@ namespace HCI_T5._4.modeli
         //private Associate _saradnik;
         private String _ime;
         private int _cena;
+        private String _opis;
 
         [NonSerialized]
         private WriteableBitmap _slicica;
@@ -42,6 +43,18 @@ namespace HCI_T5._4.modeli
             }
         }*/
 
+        public String Opis
+        {
+            get
+            {
+                return _opis;
+            }
+            set
+            {
+                _opis = value;
+                OnPropertyChanged("Opis");
+            }
+        }
         public String Ime
         {
             get

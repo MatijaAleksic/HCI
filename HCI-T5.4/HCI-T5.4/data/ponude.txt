@@ -12,14 +12,17 @@
     "Slicica": null,
     "Proizvodi": [
       {
+        "Opis": null,
         "Ime": "prdukt1",
         "Cena": 100
       },
       {
+        "Opis": null,
         "Ime": "prdukt2",
         "Cena": 200
       },
       {
+        "Opis": null,
         "Ime": "prdukt3",
         "Cena": 300
       }
@@ -28,14 +31,17 @@
   "Status": 1,
   "Proizvodi": [
     {
+      "Opis": null,
       "Ime": "prdukt1",
       "Cena": 100
     },
     {
+      "Opis": null,
       "Ime": "prdukt2",
       "Cena": 200
     },
     {
+      "Opis": null,
       "Ime": "prdukt3",
       "Cena": 300
     }
@@ -55,14 +61,17 @@
     "Slicica": null,
     "Proizvodi": [
       {
+        "Opis": null,
         "Ime": "prdukt1",
         "Cena": 100
       },
       {
+        "Opis": null,
         "Ime": "prdukt2",
         "Cena": 200
       },
       {
+        "Opis": null,
         "Ime": "prdukt3",
         "Cena": 300
       }
@@ -71,18 +80,22 @@
   "Status": 0,
   "Proizvodi": [
     {
+      "Opis": null,
       "Ime": "prdukt1",
       "Cena": 100
     },
     {
+      "Opis": null,
       "Ime": "prdukt1",
       "Cena": 100
     },
     {
+      "Opis": null,
       "Ime": "prdukt2",
       "Cena": 200
     },
     {
+      "Opis": null,
       "Ime": "prdukt2",
       "Cena": 200
     }
@@ -102,14 +115,17 @@
     "Slicica": null,
     "Proizvodi": [
       {
+        "Opis": null,
         "Ime": "prdukt1",
         "Cena": 100
       },
       {
+        "Opis": null,
         "Ime": "prdukt2",
         "Cena": 200
       },
       {
+        "Opis": null,
         "Ime": "prdukt3",
         "Cena": 300
       }
@@ -118,14 +134,17 @@
   "Status": 0,
   "Proizvodi": [
     {
+      "Opis": null,
       "Ime": "prdukt1",
       "Cena": 100
     },
     {
+      "Opis": null,
       "Ime": "prdukt1",
       "Cena": 100
     },
     {
+      "Opis": null,
       "Ime": "prdukt1",
       "Cena": 100
     }
@@ -145,14 +164,17 @@
     "Slicica": null,
     "Proizvodi": [
       {
+        "Opis": null,
         "Ime": "prdukt1",
         "Cena": 100
       },
       {
+        "Opis": null,
         "Ime": "prdukt2",
         "Cena": 200
       },
       {
+        "Opis": null,
         "Ime": "prdukt3",
         "Cena": 300
       }
@@ -161,14 +183,73 @@
   "Status": 0,
   "Proizvodi": [
     {
+      "Opis": null,
       "Ime": "prdukt2",
       "Cena": 200
     },
     {
+      "Opis": null,
       "Ime": "prdukt2",
       "Cena": 200
     }
   ]
+}
+,
+
+{
+  "ZahtevIdx": 1,
+  "Saradnik": {
+    "Ime": "Maric",
+    "Adresa": "Krajiska 83",
+    "Grad": "Futog",
+    "Type": {
+      "Ime": "Cvecara"
+    },
+    "Slicica": null,
+    "Proizvodi": [
+      {
+        "Opis": null,
+        "Ime": "prdukt1",
+        "Cena": 100
+      },
+      {
+        "Opis": null,
+        "Ime": "prdukt2",
+        "Cena": 200
+      },
+      {
+        "Opis": null,
+        "Ime": "prdukt3",
+        "Cena": 300
+      }
+    ]
+  },
+  "Status": 0,
+  "Proizvodi": [
+    {
+      "Opis": null,
+      "Ime": "prdukt2",
+      "Cena": 200
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt2",
+      "Cena": 200
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt2",
+      "Cena": 200
+    }
+  ]
+}
+,
+
+{
+  "ZahtevIdx": 1,
+  "Saradnik": null,
+  "Status": 0,
+  "Proizvodi": []
 }
 ,
 

@@ -83,5 +83,11 @@ namespace HCI_T5._4
             RegistracijaKorisnik rk = new RegistracijaKorisnik(this.MainWindow);
             rk.Show();
         }
+
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "TabelaKlijenata";
+            HelpProvider.ShowHelp(str);
+        }
     }
 }

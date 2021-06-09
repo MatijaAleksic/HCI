@@ -8,7 +8,7 @@
   "Grad": "Grad1",
   "Proizvodi": "torta neka nek bude, alkohol i trebe",
   "Status": 1,
-  "BrojPonuda": 0,
+  "BrojPonuda": 2,
   "Klijent": {
     "Ime": "Milos",
     "Prezime": "Milosevic",
@@ -45,7 +45,7 @@
   "Grad": "Grad2",
   "Proizvodi": "sampanjac i sve-pare",
   "Status": 1,
-  "BrojPonuda": 1,
+  "BrojPonuda": 2,
   "Klijent": {
     "Ime": "David",
     "Prezime": "Davidovic",

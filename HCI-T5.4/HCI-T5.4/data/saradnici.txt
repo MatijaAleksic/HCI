@@ -10,18 +10,21 @@
   "Slicica": null,
   "Proizvodi": [
     {
+      "Opis": null,
       "Ime": "prdukt1",
       "Cena": 100
     },
     {
+      "Opis": null,
       "Ime": "prdukt2",
       "Cena": 200
     },
     {
+      "Opis": null,
       "Ime": "prdukt3",
       "Cena": 300
     }
-    ]
+  ]
 }
 ,
 
@@ -35,18 +38,21 @@
   "Slicica": null,
   "Proizvodi": [
     {
+      "Opis": null,
       "Ime": "prdukt1",
       "Cena": 100
     },
     {
+      "Opis": null,
       "Ime": "prdukt2",
       "Cena": 200
     },
     {
+      "Opis": null,
       "Ime": "prdukt3",
       "Cena": 300
     }
-    ]
+  ]
 }
 ,
 
@@ -58,7 +64,23 @@
     "Ime": "Restorani"
   },
   "Slicica": null,
-  "Proizvodi": null
+  "Proizvodi": [
+    {
+      "Opis": null,
+      "Ime": "prdukt1",
+      "Cena": 100
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt2",
+      "Cena": 200
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt3",
+      "Cena": 300
+    }
+  ]
 }
 ,
 
@@ -70,7 +92,23 @@
     "Ime": "Baloni"
   },
   "Slicica": null,
-  "Proizvodi": null
+  "Proizvodi": [
+    {
+      "Opis": null,
+      "Ime": "prdukt1",
+      "Cena": 100
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt2",
+      "Cena": 200
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt3",
+      "Cena": 300
+    }
+  ]
 }
 ,
 
@@ -82,7 +120,23 @@
     "Ime": "Restorani"
   },
   "Slicica": null,
-  "Proizvodi": null
+  "Proizvodi": [
+    {
+      "Opis": null,
+      "Ime": "prdukt1",
+      "Cena": 100
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt2",
+      "Cena": 200
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt3",
+      "Cena": 300
+    }
+  ]
 }
 ,
 
@@ -94,7 +148,23 @@
     "Ime": "Poslasticarnica"
   },
   "Slicica": null,
-  "Proizvodi": null
+  "Proizvodi": [
+    {
+      "Opis": null,
+      "Ime": "prdukt1",
+      "Cena": 100
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt2",
+      "Cena": 200
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt3",
+      "Cena": 300
+    }
+  ]
 }
 ,
 
@@ -106,7 +176,23 @@
     "Ime": "Poslasticarnica"
   },
   "Slicica": null,
-  "Proizvodi": null
+  "Proizvodi": [
+    {
+      "Opis": null,
+      "Ime": "prdukt1",
+      "Cena": 100
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt2",
+      "Cena": 200
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt3",
+      "Cena": 300
+    }
+  ]
 }
 ,
 
@@ -118,7 +204,23 @@
     "Ime": "Ketering"
   },
   "Slicica": null,
-  "Proizvodi": null
+  "Proizvodi": [
+    {
+      "Opis": null,
+      "Ime": "prdukt1",
+      "Cena": 100
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt2",
+      "Cena": 200
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt3",
+      "Cena": 300
+    }
+  ]
 }
 ,
 
@@ -130,7 +232,23 @@
     "Ime": "Ketering"
   },
   "Slicica": null,
-  "Proizvodi": null
+  "Proizvodi": [
+    {
+      "Opis": null,
+      "Ime": "prdukt1",
+      "Cena": 100
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt2",
+      "Cena": 200
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt3",
+      "Cena": 300
+    }
+  ]
 }
 ,
 
@@ -142,7 +260,23 @@
     "Ime": "Restorani"
   },
   "Slicica": null,
-  "Proizvodi": null
+  "Proizvodi": [
+    {
+      "Opis": null,
+      "Ime": "prdukt1",
+      "Cena": 100
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt2",
+      "Cena": 200
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt3",
+      "Cena": 300
+    }
+  ]
 }
 ,
 
@@ -154,7 +288,51 @@
     "Ime": "Baloni"
   },
   "Slicica": null,
-  "Proizvodi": null
+  "Proizvodi": [
+    {
+      "Opis": null,
+      "Ime": "prdukt1",
+      "Cena": 100
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt2",
+      "Cena": 200
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt3",
+      "Cena": 300
+    }
+  ]
+}
+,
+
+{
+  "Ime": "NoviBalon",
+  "Adresa": "Koste Racina 38",
+  "Grad": "Novi Sad",
+  "Type": {
+    "Ime": "Baloni"
+  },
+  "Slicica": null,
+  "Proizvodi": [
+    {
+      "Opis": null,
+      "Ime": "prdukt1",
+      "Cena": 100
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt2",
+      "Cena": 200
+    },
+    {
+      "Opis": null,
+      "Ime": "prdukt3",
+      "Cena": 300
+    }
+  ]
 }
 ,
 
