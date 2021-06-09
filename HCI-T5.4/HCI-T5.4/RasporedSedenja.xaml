@@ -1,0 +1,43 @@
+﻿<Window x:Class="HCI_T5._4.RasporedSedenja"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HCI_T5._4"
+        mc:Ignorable="d"
+        Title="RasporedSedenja" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="780"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="205*"/>
+            <ColumnDefinition Width="587*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ListView Name ="listaArhitekti" Grid.Row="0" ItemsSource="{Binding Gosti}" SelectedItem="{Binding Path=SelectedResource}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <WrapPanel>
+                            <TextBlock Text="{Binding Name}"/>
+                            <TextBlock Text=" "/>
+                            <TextBlock Text="{Binding Surname}"/>
+                            <TextBlock Text=" "/>
+                            <TextBlock Text="{Binding MestoRodjenja}"/>
+                        </WrapPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+        <Canvas Name="Map" local:HelpProvider.HelpKey="mainWindow"  Grid.Column="1" Grid.Row="1"  AllowDrop="True" DragEnter="MyImage_DragEnter" >
+            <Canvas.Background>
+                <ImageBrush/>
+            </Canvas.Background>
+        </Canvas>
+    </Grid>
+</Window>
