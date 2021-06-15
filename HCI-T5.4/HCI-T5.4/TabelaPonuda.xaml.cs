@@ -25,7 +25,6 @@ namespace HCI_T5._4
 
         private MainWindow MainWindow { get; set; }
         public ObservableCollection<CelebrationOffer> Ponude { get; set; }
-        public ObservableCollection<CelebrationRequestStatus> Statusi { get; set; }
 
         public TabelaPonuda()
         {
@@ -48,11 +47,6 @@ namespace HCI_T5._4
                     Ponude.Add(cel);
                 }
             }
-
-            /*Statusi.Add(CelebrationRequestStatus.Podnesen);
-            Statusi.Add(CelebrationRequestStatus.Cekanje);
-            Statusi.Add(CelebrationRequestStatus.Zavrsen);*/
-
         }
 
         private void SearchZahtev_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
@@ -62,22 +56,11 @@ namespace HCI_T5._4
             dgrMain.ItemsSource = searched;
         }
 
-        private void Tip_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            CelebrationRequestStatus st = (CelebrationRequestStatus) Status.SelectedItem;
-            var searched = Ponude.Where(elem => elem.Status.ToString().Equals(st.ToString()));
-            dgrMain.ItemsSource = searched;
+            string str = "tabelaPonuda";
+            HelpProvider.ShowHelp(str);
         }
 
-        private void PogledajDetalje_Click(object sender, RoutedEventArgs e)
-        {
-            CelebrationOffer selectedOffer = (CelebrationOffer)dgrMain.SelectedItem;
-
-            if (selectedOffer != null)
-            {
-                var detalji = new HCI_T5._4.DetaljiPonude(this.MainWindow, selectedOffer);
-                detalji.Show();
-            }
-        }
     }
 }

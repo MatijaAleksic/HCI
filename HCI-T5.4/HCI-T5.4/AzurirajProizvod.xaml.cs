@@ -24,6 +24,12 @@ namespace HCI_T5._4
             InitializeComponent();
         }
 
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "azurirajProizvod";
+            HelpProvider.ShowHelp(str);
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
         }

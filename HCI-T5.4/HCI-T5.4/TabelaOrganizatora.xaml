@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="TabelaOrganizatora" Height="450" Width="800">
 
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpBinding_Executed"></CommandBinding>
+    </Window.CommandBindings>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -61,7 +65,23 @@
 
         </Grid>
 
-        <Button x:Name="ObrisiKlijenta" Content="Obrisi organizatora" Grid.Column="5" Grid.Row="4" Width="120" Height="40" Click="ObrisiOrganizatora_Click"  HorizontalAlignment="Right" />
-        <Button x:Name="DodajKlijenta" Content="Dodaj organizatora" Grid.Column="5" Grid.Row="4" Width="120" Height="40"  Click="DodajKlijenta_Click" HorizontalAlignment="Left" RenderTransformOrigin="0.471,1.128" />
+        <Button x:Name="ObrisiKlijenta" Content="Obrisi organizatora" Grid.Column="5" Grid.Row="4" Width="120" Height="40" Click="ObrisiOrganizatora_Click"  HorizontalAlignment="Right" >
+            <Button.ToolTip>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="5" TextWrapping="Wrap" MaxWidth="100">
+                            Nakon pritiska na ovo dugme pojavice vam se upit da li zelite da obrisene organizatora.
+                    </TextBlock>
+                </StackPanel>
+            </Button.ToolTip>
+        </Button>
+        <Button x:Name="DodajKlijenta" Content="Dodaj organizatora" Grid.Column="5" Grid.Row="4" Width="120" Height="40"  Click="DodajKlijenta_Click" HorizontalAlignment="Left" RenderTransformOrigin="0.471,1.128" >
+            <Button.ToolTip>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="5" TextWrapping="Wrap" MaxWidth="100">
+                            Otvara formu za dodavanje organizatora.
+                    </TextBlock>
+                </StackPanel>
+            </Button.ToolTip>
+        </Button>
     </Grid>
 </Window>

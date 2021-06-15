@@ -6,6 +6,13 @@
         xmlns:local="clr-namespace:HCI_T5._4"
         mc:Ignorable="d"
         Title="TabelaPonuda" Height="450" Width="800">
+    <Window.CommandBindings>
+
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpBinding_Executed"></CommandBinding>
+
+    </Window.CommandBindings>
+    
+    
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <Menu.ItemsPanel>
@@ -38,15 +45,7 @@
             </Grid.RowDefinitions>
 
             <Label Grid.Column="2" Grid.Row="2">Filter:</Label>
-            <ComboBox Margin="0,0,0,0" HorizontalAlignment="Center"  Grid.Column="3" Grid.Row="2" ItemsSource="{Binding Statusi}" x:Name="Status" Height="22" Width="340" SelectionChanged="Tip_SelectionChanged">
-                <ComboBox.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding Ime}" />
-                        </StackPanel>
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
-            </ComboBox>
+            <ListBox x:Name="Filter" Grid.Column="3" Grid.Row="2" Margin="5,5,5,5" HorizontalAlignment="Left" Width="366" />
             <Label Grid.Column="4" Grid.Row="2">Pretraga:</Label>
             <TextBox x:Name="SearchZahtev" Grid.Column="5" Grid.Row="2" Margin="5,5,5,5" VerticalAlignment="Center" KeyUp="SearchZahtev_KeyUp" />
 
@@ -80,7 +79,24 @@
 
             </Grid>
 
-            <Button Content="Pogledaj Detalje" Grid.Column="5" Grid.Row="4" Width="150" Height="40" Click="PogledajDetalje_Click"  />
+            <Button Content="Prihvati" Grid.Column="5" Grid.Row="4" Width="150" Height="40"  >
+                <Button.ToolTip>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="5" TextWrapping="Wrap" MaxWidth="100">
+                            Prihvatam ponudu.
+                        </TextBlock>
+                    </StackPanel>
+                </Button.ToolTip>
+            </Button>
+            <Button Content="Odbiji" Grid.Column="3" Grid.Row="4" Width="150" Height="40"  >
+                <Button.ToolTip>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="5" TextWrapping="Wrap" MaxWidth="100">
+                            Odbijam formu.
+                        </TextBlock>
+                    </StackPanel>
+                </Button.ToolTip>
+            </Button>
 
         </Grid>
     </DockPanel>

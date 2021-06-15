@@ -6,6 +6,10 @@
         xmlns:local="clr-namespace:HCI_T5._4"
         mc:Ignorable="d"
         Title="RegistracijaOrganizatora" Height="400" Width="320">
+
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpBinding_Executed"></CommandBinding>
+    </Window.CommandBindings>
     <Grid>
         <Label Content="Registracija organizatora" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Gray" FontSize="18"/>
 

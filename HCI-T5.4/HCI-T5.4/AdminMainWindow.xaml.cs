@@ -27,7 +27,7 @@ namespace HCI_T5._4
         public ObservableCollection<String> Statusi2 { get; set; }
         private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            string str = "test";
+            string str = "AdminMainWindow";
             HelpProvider.ShowHelp(str);
         }
 

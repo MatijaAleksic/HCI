@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="AzurirajProizvod" Height="300
         " Width="450">
+    <Window.CommandBindings>
+
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpBinding_Executed"></CommandBinding>
+
+    </Window.CommandBindings>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -26,7 +31,15 @@
         </Grid.RowDefinitions>
 
         <Label Grid.Column="1" Grid.Row="1">Izaberi saradnika:</Label>
-        <Button Grid.Column="2" Grid.Row="1" Width="150" Margin="5,5,5,5">Otvori tabelu saradnika</Button>
+        <Button Grid.Column="2" Grid.Row="1" Width="150" Margin="5,5,5,5">
+            <Button.ToolTip>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="5" TextWrapping="Wrap" MaxWidth="100">
+                            Otvara tabelu saradnika.
+                    </TextBlock>
+                </StackPanel>
+            </Button.ToolTip>
+            Otvori tabelu saradnika</Button>
         <Label Grid.Column="1" Grid.Row="2">Id:</Label>
         <TextBox x:Name="Id" Grid.Column="2" Grid.Row="2" Margin="2,2,2,2" />
 
@@ -34,12 +47,29 @@
         <TextBox x:Name="Opis" MaxLength="20" Grid.Column="2" Grid.Row="3" Margin="2,2,2,2" ></TextBox>
 
         <Label Grid.Column="1" Grid.Row="4">Slika:</Label>
-        <Button Grid.Column="2" Grid.Row="4" Width="150" Margin="5,5,5,5">Izaberi sliku</Button>
+        <Button Grid.Column="2" Grid.Row="4" Width="150" Margin="5,5,5,5">
+            <Button.ToolTip>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="5" TextWrapping="Wrap" MaxWidth="100">
+                            Izaberite sliku.
+                    </TextBlock>
+                </StackPanel>
+            </Button.ToolTip>
+        
+        Izaberi sliku</Button>
 
         <Label Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" Margin="0,10,334,56" Grid.RowSpan="2">Opis:</Label>
         <TextBox x:Name="ClrPcker" Grid.Column="2" Grid.Row="5" Margin="2,2,2,2"></TextBox>
 
-        <Button x:Name="AzurirajProizvod1" Grid.Column="2" Grid.Row="6" Width="100" Height="40" Content="Azuriraj proizvod" Click="Button_Click" />
+        <Button x:Name="AzurirajProizvod1" Grid.Column="2" Grid.Row="6" Width="100" Height="40" Content="Azuriraj proizvod" Click="Button_Click" >
+            <Button.ToolTip>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="5" TextWrapping="Wrap" MaxWidth="100">
+                            Nakon pritiska na ovo dugme ce vam se azurirati proizvod.
+                    </TextBlock>
+                </StackPanel>
+            </Button.ToolTip>
+        </Button>
         <Button x:Name="Nazad" Content="Nazad" HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" Grid.Column="1" Grid.Row="7"/>
     </Grid>
 </Window>

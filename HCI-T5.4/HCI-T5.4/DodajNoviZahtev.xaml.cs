@@ -73,6 +73,11 @@ namespace HCI_T5._4
             Regex regex = new Regex("[^0-9]+");
             e.Handled = regex.IsMatch(e.Text);
         }
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "dodavanjeZahteva";
+            HelpProvider.ShowHelp(str);
+        }
 
-}
+    }
 }

@@ -6,6 +6,13 @@
         xmlns:local="clr-namespace:HCI_T5._4"
         mc:Ignorable="d"
         Title="TabelaProizvoda" Height="450" Width="800">
+
+    <Window.CommandBindings>
+
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpBinding_Executed"></CommandBinding>
+
+    </Window.CommandBindings>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -59,6 +66,14 @@
 
         </Grid>
 
-        <Button x:Name="ObrisiProizvod" Grid.Column="5" Grid.Row="4" Width="100" Height="40" Content="Obrisi proizvod"/>
+        <Button x:Name="ObrisiProizvod" Grid.Column="5" Grid.Row="4" Width="100" Height="40" Content="Obrisi proizvod" Margin="173,10,10,114">
+            <Button.ToolTip>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="5" TextWrapping="Wrap" MaxWidth="100">
+                            Nakon pritiska na ovo dugme pojavice vam se upit da li stvarno zelite da obrisete proizvod.
+                    </TextBlock>
+                </StackPanel>
+            </Button.ToolTip>
+        </Button>
     </Grid>
 </Window>

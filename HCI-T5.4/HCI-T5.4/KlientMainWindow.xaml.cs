@@ -30,7 +30,6 @@ namespace HCI_T5._4
         public KlientMainWindow()
         {
             InitializeComponent();
-            this.DataContext = this;
 
         }
 
@@ -42,6 +41,7 @@ namespace HCI_T5._4
             this.MainWindow = window;
 
             Statusi2 = new ObservableCollection<string>();
+
             Zahtevi = new ObservableCollection<CelebrationRequest>();
 
             foreach (CelebrationRequest cel in this.MainWindow.Zahtevi)
@@ -51,10 +51,10 @@ namespace HCI_T5._4
                     Zahtevi.Add(cel);
                 }
             }
+
             Statusi2.Add("Podnesen");
             Statusi2.Add("Cekanje");
             Statusi2.Add("Zavrsen");
-            
         }
 
         private void Logout_Click(object sender, RoutedEventArgs e)
@@ -90,7 +90,7 @@ namespace HCI_T5._4
 
         private void SearchZahtev_KeyUp(object sender, KeyEventArgs e)
         {
-            var searched = Zahtevi.Where(elem => elem.Grad.ToLower().StartsWith(SearchZahtev.Text.ToLower()));
+            var searched = Zahtevi.Where(elem => elem.VrstaProslave.ToLower().StartsWith(SearchZahtev.Text.ToLower()));
 
             dgrMain.ItemsSource = searched;
         }
@@ -108,7 +108,23 @@ namespace HCI_T5._4
             }
         }
 
+
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "klijentMainWindow";
+            HelpProvider.ShowHelp(str);
+        }
+
         private void Tip_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+                String st = (String)Status.SelectedItem;
+                var searched = Zahtevi.Where(elem => elem.Status.ToString().Equals(st));
+                dgrMain.ItemsSource = searched;
+            
+        }
+
+        private void Status_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             String st = (String)Status.SelectedItem;
             var searched = Zahtevi.Where(elem => elem.Status.ToString().Equals(st));

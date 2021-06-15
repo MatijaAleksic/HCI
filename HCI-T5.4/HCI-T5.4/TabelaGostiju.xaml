@@ -6,6 +6,12 @@
         xmlns:local="clr-namespace:HCI_T5._4"
         mc:Ignorable="d"
         Title="TabelaGostiju" Height="373" Width="370">
+    <Window.CommandBindings>
+
+        <CommandBinding Command="ApplicationCommands.Help" Executed="HelpBinding_Executed"></CommandBinding>
+
+    </Window.CommandBindings>
+    
     <Grid>
         <Grid.ColumnDefinitions>
         </Grid.ColumnDefinitions>

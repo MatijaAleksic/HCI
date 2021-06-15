@@ -43,7 +43,7 @@ namespace HCI_T5._4
             {
                 if (admin.Username.Equals(Username.Text) && admin.Password.Equals(Password.Password))
                 {
-                    MessageBox.Show("Uspjesan login administrator!");
+                    MessageBox.Show("Uspesno ulogovan administrator!");
                     this.MainWindow.loggedUsername = Username.Text;
                     var AdminMainWindow = new HCI_T5._4.AdminMainWindow(this.MainWindow);
                     Application.Current.MainWindow = AdminMainWindow;
@@ -61,7 +61,7 @@ namespace HCI_T5._4
 
                 if (organiser.Username.Equals(Username.Text) && organiser.Password.Equals(Password.Password))
                 {
-                    MessageBox.Show("Uspjesan login organizer!");
+                    MessageBox.Show("Uspesno ulogovan orgranizator!");
                     this.MainWindow.loggedUsername = Username.Text;
                     var OrganiserMainWindow = new HCI_T5._4.OrganiserMainWindow(this.MainWindow);
                     Application.Current.MainWindow = OrganiserMainWindow;
@@ -85,7 +85,7 @@ namespace HCI_T5._4
                     //clientHome.Show();
 
 
-                    MessageBox.Show("Uspjesan login klijent!");
+                    MessageBox.Show("Uspesno ulogovan klijent!");
                     this.MainWindow.loggedUsername = Username.Text;
                     var clientHome = new HCI_T5._4.KlientMainWindow(this.MainWindow);
                     Application.Current.MainWindow = clientHome;
@@ -97,7 +97,7 @@ namespace HCI_T5._4
             }
             if (!uspesno)
             {
-                MessageBox.Show("Neipravni kredencijali, pokusajte ponovo");
+                MessageBox.Show("Neispravni kredencijali, pokusajte ponovo.");
             }
         }
 
@@ -110,6 +110,12 @@ namespace HCI_T5._4
         private void Login_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             this.MainWindow.Close();
+        }
+
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "login";
+            HelpProvider.ShowHelp(str);
         }
     }
 }

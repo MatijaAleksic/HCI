@@ -1,7 +1,5 @@
-﻿using HCI_T5._4.modeli;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,30 +19,24 @@ namespace HCI_T5._4
     /// </summary>
     public partial class DodajProizvod : Window
     {
-        private MainWindow MainWindow { get; set; }
-        string pathProizvoda = @"..\..\..\data\saradnici.txt";
-        public ObservableCollection<Associate> Saradnici { get; set; }
-
-        public Associate saradnik { get; set; }
-
         public DodajProizvod()
         {
             InitializeComponent();
         }
-        public DodajProizvod(MainWindow window,Associate selectedAssociate)
-        {
-            InitializeComponent();
-            this.DataContext = this;
-            this.MainWindow = window;
-
-            saradnik = selectedAssociate;
-            Saradnici = new ObservableCollection<Associate>();
-        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
+        private void NazadProizvod_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "dodajProizvod";
+            HelpProvider.ShowHelp(str);
+        }
     }
 }

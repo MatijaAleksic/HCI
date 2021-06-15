@@ -23,5 +23,12 @@ namespace HCI_T5._4
         {
             InitializeComponent();
         }
+
+        private void HelpBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            string str = "tabelaDogadjaja";
+            HelpProvider.ShowHelp(str);
+        }
+
     }
 }
